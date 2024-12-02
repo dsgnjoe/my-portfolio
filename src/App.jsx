@@ -1,5 +1,15 @@
+import Hero from "./Components/Hero";
+import Navbar from "./Components/Navbar";
+import MyProjects from "./Components/MyProjects";
+import Footer from "./Components/Footer";
+
 function App() {
-  return <div className="text-green-400 text-lg">Hello</div>;
+  return <div className="">
+    <Navbar />
+    <Hero />
+    <MyProjects />
+    <Footer />
+  </div>;
 }
 
 export default App;
