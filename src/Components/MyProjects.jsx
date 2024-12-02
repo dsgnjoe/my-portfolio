@@ -4,7 +4,7 @@ import kriblink from "../images/kriblink.png";
 
 const MyProjects = () => {
 	return (
-		<div className="container px-5 mx-auto pb-20">
+		<div className="container px-5 mx-auto pb-20" id="works">
 			<h4 className="text-[20px] font-bold pb-6">Featured Works</h4>
 
 			<div className="flex flex-col gap-20 mb-20">

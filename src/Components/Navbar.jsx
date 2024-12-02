@@ -1,5 +1,5 @@
-import React, { useState} from "react";
-import { FaBars, FaLinkedin, FaDribbble,FaTimes } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaBars, FaLinkedin, FaDribbble, FaTimes } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 
 import logo from "../images/logo.png";
@@ -11,11 +11,9 @@ const Navbar = () => {
 		setIsOpen(!isOpen);
 	};
 
-
 	return (
 		<div>
-			<nav
-				className="border-b border-gray-200 bg-white p-4 w-full">
+			<nav className="border-b border-gray-200 bg-white p-4 w-full">
 				<div className="container mx-auto flex justify-between items-center">
 					<a href="/" className="text-white text-2xl font-bold">
 						<img src={logo} alt="" />
@@ -31,7 +29,7 @@ const Navbar = () => {
 
 					<ul className="hidden lg:flex items-center space-x-10">
 						<li>
-							<a href="#home" className="text-[#525866] hover:text-gray-400">
+							<a href="#works" className="text-[#525866] hover:text-gray-400">
 								Works
 							</a>
 						</li>
@@ -73,8 +71,8 @@ const Navbar = () => {
 
 			{isOpen && (
 				<div className="lg:hidden fixed bottom-0 top-0 left-0 w-full h-full bg-white z-50 flex flex-col transition-all">
-				<div className="p-4 flex justify-between items-center">
-                <a href="/" className="text-white text-2xl font-bold">
+					<div className="p-4 flex justify-between items-center">
+						<a href="/" className="text-white text-2xl font-bold">
 							<img src={logo} alt="" />
 						</a>
 						<div className="block lg:hidden">
@@ -89,7 +87,7 @@ const Navbar = () => {
 					<ul className="space-y-4 flex flex-col items-center justify-center h-full">
 						<li>
 							<a
-								href="#home"
+								href="#works"
 								className="text-[#525866] text-2xl hover:text-gray-400"
 								onClick={toggleSidebar}
 							>
@@ -126,7 +124,7 @@ const Navbar = () => {
 							</a>
 						</li>
 
-                        <li>
+						<li>
 							<a
 								href=""
 								className="text-white bg-black rounded-full  px-3 py-2 flex items-center gap-2"
