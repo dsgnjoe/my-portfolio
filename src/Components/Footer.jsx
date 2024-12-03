@@ -13,13 +13,18 @@ const Footer = () => {
           </a>
           <ul className="flex flex-col md:flex-row items-center gap-8">
             <li>
-              <a href="#about" className="text-[#525866] hover:text-gray-400">
+              <a
+                href="https://drive.google.com/file/d/1Uezx2LXyztz483zrjNpfOCBI0I81EhE-/view?usp=drive_link"
+                target="_blank"
+                className="text-[#525866] hover:text-gray-400"
+              >
                 Resume
               </a>
             </li>
             <li>
               <a
-                href="#projects"
+                href="https://www.linkedin.com/in/josephadofo/"
+                target="_blank"
                 className="text-[#525866] hover:text-gray-400 flex items-center gap-2"
               >
                 <FaLinkedin />
@@ -28,7 +33,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#contact"
+                href="https://www.behance.net/kwabenaadofo"
                 className="text-[#525866] hover:text-gray-400 flex items-center gap-2"
               >
                 <FaBehance />

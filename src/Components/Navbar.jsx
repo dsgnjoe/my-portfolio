@@ -34,7 +34,11 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#about" className="text-[#525866] hover:text-gray-400">
+              <a
+                href="https://drive.google.com/file/d/1Uezx2LXyztz483zrjNpfOCBI0I81EhE-/view?usp=drive_link"
+                target="_blank"
+                className="text-[#525866] hover:text-gray-400"
+              >
                 Resume
               </a>
             </li>
@@ -99,7 +103,8 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#about"
+                href="https://drive.google.com/file/d/1Uezx2LXyztz483zrjNpfOCBI0I81EhE-/view?usp=drive_link"
+                target="_blank"
                 className="text-[#525866] text-2xl hover:text-gray-400"
                 onClick={toggleSidebar}
               >
