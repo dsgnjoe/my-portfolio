@@ -87,7 +87,7 @@ const MyProjects = () => {
       </div>
 
       <div className="bg-[#F6F8FA] border border-[#E2E4E9] rounded-lg p-7">
-        <p className="text-[20px] lg:text-[36px] text-center font-bold lg:mx-48  mb-3 md:mb-0">
+        <p className="text-[20px] lg:text-[36px] text-center font-bold lg:mx-48  mb-3 md:mb-4">
           My design philosophy is rooted in empathy and a deep understanding of
           the end user.
         </p>

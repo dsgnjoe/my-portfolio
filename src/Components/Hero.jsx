@@ -39,7 +39,7 @@ const Hero = () => {
 
     const interval = setInterval(() => {
       setCurrentColors(shuffleColors());
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
