@@ -1,41 +1,46 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import kriblink from "../images/kriblink.png";
+import citizen from "../images/Citizen.png";
 
 const MyProjects = () => {
   return (
     <div className="container px-5 mx-auto pb-20" id="works">
-      <h4 className="text-[20px] font-bold pb-6">Featured Works</h4>
+      <h4 className="text-[20px] md:text-[40px] font-bold pb-6 md:pb-12">
+        Featured Works
+      </h4>
 
       <div className="flex flex-col gap-20 mb-20">
         <div>
           <div class="flex flex-col lg:flex-row justify-center items-center gap-4">
-            <div class="bg-[#ffdcc2] p-6 lg:p-12 lg:w-3/4 rounded-lg">
-              <img src={kriblink} alt="" className="rounded-lg" />
+            <div class="bg-[#FFE8A4] p-6 lg:p-12 lg:w-3/4 rounded-lg">
+              <img src={citizen} alt="cover image" className="rounded-lg" />
             </div>
             <div class="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
               <div className="flex flex-wrap gap-4 mb-6">
                 <div className="rounded-full px-3 py-2 flex-shrink-0 bg-[#FDEBFF] w-fit">
-                  Case Study
+                  Web App
                 </div>
                 <div className="rounded-full px-3 py-2 flex-shrink-0 bg-[#EFFAF6] w-fit">
-                  Web App
+                  Design
                 </div>
               </div>
 
               <div>
-                <h4 className="text-[40px] font-bold pb-3">Kriblink</h4>
-                <p className="text-[#525866]  pb-3">
-                  A platform that helps students easily find safe, affordable,
-                  and convenient off-campus accommodation with verified listings
-                  and smart search tools.
+                <h4 className="text-[40px] font-bold pb-3">CitizenApp</h4>
+                <p className="text-[#525866]  pb-3 md:pb-12">
+                  This app connects you to official public notices from all arms
+                  and institutions of government. The CitizenApp connects all
+                  your interactions with the government into one seamless
+                  digital experience.
                 </p>
 
                 <a
-                  href=""
+                  href="https://www.citizen.gov.gh/"
+                  target="_blank"
                   className="text-black font-medium flex items-center gap-2"
                 >
-                  View Prototype
+                  Visit Project
                   <MdArrowOutward />
                 </a>
               </div>
@@ -43,7 +48,7 @@ const MyProjects = () => {
           </div>
         </div>
         <div>
-          <div class="flex flex-col lg:flex-row justify-center items-center gap-4">
+          <div class="flex flex-col-reverse lg:flex-row justify-center items-center gap-4">
             <div class="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
               <div className="flex flex-wrap gap-4 mb-6">
                 <div className="rounded-full px-3 py-2 flex-shrink-0 bg-[#FDEBFF] w-fit">
@@ -55,8 +60,10 @@ const MyProjects = () => {
               </div>
 
               <div>
-                <h4 className="text-[40px] font-bold pb-3">Kriblink</h4>
-                <p className="text-[#525866]  pb-3">
+                <h4 className="text-[24px] md:text-[40px] font-bold pb-3">
+                  Kriblink
+                </h4>
+                <p className="text-[#525866]  pb-3 md:pb-12">
                   A platform that helps students easily find safe, affordable,
                   and convenient off-campus accommodation with verified listings
                   and smart search tools.
@@ -73,7 +80,7 @@ const MyProjects = () => {
             </div>
 
             <div class="bg-[#ffdcc2] p-6 lg:p-12 lg:w-3/4 rounded-lg">
-              <img src={kriblink} alt="" className="rounded-lg" />
+              <img src={kriblink} alt="" className="rounded-lg " />
             </div>
           </div>
         </div>
