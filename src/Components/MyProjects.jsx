@@ -12,11 +12,11 @@ const MyProjects = () => {
 
       <div className="flex flex-col gap-20 mb-20">
         <div>
-          <div class="flex flex-col lg:flex-row justify-center items-center gap-4">
-            <div class="bg-[#FFE8A4] p-6 lg:p-12 lg:w-3/4 rounded-lg">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
+            <div className="bg-[#FFE8A4] p-6 lg:p-12 lg:w-3/4 rounded-lg">
               <img src={citizen} alt="cover image" className="rounded-lg" />
             </div>
-            <div class="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
+            <div className="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
               <div className="flex flex-wrap gap-4 mb-6">
                 <div className="rounded-full px-3 py-2 flex-shrink-0 bg-[#FDEBFF] w-fit">
                   Web App
@@ -48,8 +48,8 @@ const MyProjects = () => {
           </div>
         </div>
         <div>
-          <div class="flex flex-col-reverse lg:flex-row justify-center items-center gap-4">
-            <div class="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
+          <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-4">
+            <div className="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
               <div className="flex flex-wrap gap-4 mb-6">
                 <div className="rounded-full px-3 py-2 flex-shrink-0 bg-[#FDEBFF] w-fit">
                   Case Study
@@ -70,7 +70,7 @@ const MyProjects = () => {
                 </p>
 
                 <a
-                  href=""
+                  href="/kriblink"
                   className="text-black font-medium flex items-center gap-2"
                 >
                   View Prototype
@@ -79,7 +79,7 @@ const MyProjects = () => {
               </div>
             </div>
 
-            <div class="bg-[#ffdcc2] p-6 lg:p-12 lg:w-3/4 rounded-lg">
+            <div className="bg-[#ffdcc2] p-6 lg:p-12 lg:w-3/4 rounded-lg">
               <img src={kriblink} alt="" className="rounded-lg " />
             </div>
           </div>
@@ -91,7 +91,7 @@ const MyProjects = () => {
           My design philosophy is rooted in empathy and a deep understanding of
           the end user.
         </p>
-
+        ``
         <div className="flex flex-col md:flex-row justify-center gap-4 items-center">
           <button
             className="border border-black bg-black rounded-full px-4 py-3 text-center text-white"
