@@ -14,7 +14,7 @@ const MyProjects = () => {
         <div>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
             <div className="bg-[#FFE8A4] p-6 lg:p-12 lg:w-3/4 rounded-lg">
-              <img src={citizen} alt="cover image" className="rounded-lg" />
+              s<img src={citizen} alt="cover image" className="rounded-lg" />
             </div>
             <div className="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
               <div className="flex flex-wrap gap-4 mb-6">
@@ -80,7 +80,7 @@ const MyProjects = () => {
             </div>
 
             <div className="bg-[#ffdcc2] p-6 lg:p-12 lg:w-3/4 rounded-lg">
-              <img src={kriblink} alt="" className="rounded-lg " />
+              <img src={kriblink} alt="" className="rounded-lg" />
             </div>
           </div>
         </div>
@@ -91,7 +91,6 @@ const MyProjects = () => {
           My design philosophy is rooted in empathy and a deep understanding of
           the end user.
         </p>
-        ``
         <div className="flex flex-col md:flex-row justify-center gap-4 items-center">
           <button
             className="border border-black bg-black rounded-full px-4 py-3 text-center text-white"
@@ -107,7 +106,7 @@ const MyProjects = () => {
             See My Resume
           </button>
           <button
-            className="border border-black rounded-full px-4 py-3 text-center  flex items-center gap-2 "
+            className="border border-black rounded-full px-4 py-3 text-center  flex items-center gap-2"
             type="button"
             onClick={(e) => {
               e.preventDefault();
