@@ -1,7 +1,14 @@
 import React from "react";
+import Container from "../Components/Container";
 
 function Kriblink() {
-  return <div>Kriblink</div>;
+  return (
+    <div>
+      <Container>
+        <div></div>
+      </Container>
+    </div>
+  );
 }
 
 export default Kriblink;

@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
 import Kriblink from "./Kriblink";
+import ThriftFinder from "./ThriftFinder";
 
 function ProjectDetails() {
   const { id } = useParams();
@@ -13,7 +14,7 @@ function ProjectDetails() {
       return <Kriblink />;
     // break;
     case "thrift-finder":
-      return <div>thriftfinder</div>;
+      return <ThriftFinder />;
     // code block
     // break;
     default:

@@ -10,7 +10,9 @@ const MyProjects = () => {
         Featured Works
       </h4>
 
+      {/* Projects Container */}
       <div className="flex flex-col gap-20 mb-20">
+        {/* first project */}
         <div>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
             <div className="bg-[#FFE8A4] p-6 lg:p-12 lg:w-3/4 rounded-lg">
@@ -47,6 +49,8 @@ const MyProjects = () => {
             </div>
           </div>
         </div>
+
+        {/* Second project */}
         <div>
           <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-4">
             <div className="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
@@ -81,6 +85,44 @@ const MyProjects = () => {
 
             <div className="bg-[#ffdcc2] p-6 lg:p-12 lg:w-3/4 rounded-lg">
               <img src={kriblink} alt="" className="rounded-lg" />
+            </div>
+          </div>
+        </div>
+
+        {/* Third Project project */}
+        <div>
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
+            <div className="bg-[#FFE8A4] p-6 lg:p-12 lg:w-3/4 rounded-lg">
+              s<img src={citizen} alt="cover image" className="rounded-lg" />
+            </div>
+            <div className="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
+              <div className="flex flex-wrap gap-4 mb-6">
+                <div className="rounded-full px-3 py-2 flex-shrink-0 bg-[#FDEBFF] w-fit">
+                  Web App
+                </div>
+                <div className="rounded-full px-3 py-2 flex-shrink-0 bg-[#EFFAF6] w-fit">
+                  Design
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-[40px] font-bold pb-3">ThriftFinder</h4>
+                <p className="text-[#525866]  pb-3 md:pb-12">
+                  This app connects you to official public notices from all arms
+                  and institutions of government. The CitizenApp connects all
+                  your interactions with the government into one seamless
+                  digital experience.
+                </p>
+
+                <a
+                  href="/thrift-finder"
+                  target=""
+                  className="text-black font-medium flex items-center gap-2"
+                >
+                  Visit Project
+                  <MdArrowOutward />
+                </a>
+              </div>
             </div>
           </div>
         </div>
