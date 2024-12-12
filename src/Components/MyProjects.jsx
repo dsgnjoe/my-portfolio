@@ -16,7 +16,7 @@ const MyProjects = () => {
         <div>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
             <div className="bg-[#FFE8A4] p-6 lg:p-12 lg:w-3/4 rounded-lg">
-              s<img src={citizen} alt="cover image" className="rounded-lg" />
+              <img src={citizen} alt="cover image" className="rounded-lg" />
             </div>
             <div className="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
               <div className="flex flex-wrap gap-4 mb-6">
