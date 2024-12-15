@@ -40,7 +40,7 @@ function ThriftFinder() {
         <div className="h-[580px] mb-20 ">
           <img
             className="w-full h-full object-cover rounded-2xl"
-            src="/src/images/Cover.png"
+            src="../images/Cover.png"
             alt="cover image"
           />
         </div>
@@ -101,7 +101,7 @@ function ThriftFinder() {
           <div className="h-[315px] ">
             <img
               className="w-full h-full object-cover rounded-2xl"
-              src="/src/images/Sign up.png"
+              src="../images/Sign-up.png"
               alt=""
             />
           </div>
@@ -174,10 +174,10 @@ function ThriftFinder() {
           </p>
           <div className="grid grid-cols-2">
             <div>
-              <img src="/src/images/Onboarding.png" alt="" />
+              <img src="../images/Onboarding.png" alt="" />
             </div>
             <div>
-              <img src="/src/images/Account.png" alt="" />
+              <img src="../images/Account.png" alt="" />
             </div>
           </div>
         </div>
@@ -188,7 +188,7 @@ function ThriftFinder() {
             related to that item and visit a shop directly from the shop page.
           </p>
           <div>
-            <img src="/src/images/Find.png" alt="" />
+            <img src="../images/Find.png" alt="" />
           </div>
         </div>
         <div>
@@ -199,7 +199,7 @@ function ThriftFinder() {
             the products the shop sells.
           </p>
           <div>
-            <img src="/src/images/Add.png" alt="" />
+            <img src="../images/Add.png" alt="" />
           </div>
         </div>
         <div className="mb-8">
@@ -209,7 +209,7 @@ function ThriftFinder() {
             shopping experience
           </p>
           <div>
-            <img src="/src/images/Review.png" alt="" />
+            <img src="../images/Review.png" alt="" />
           </div>
         </div>
         <div>
