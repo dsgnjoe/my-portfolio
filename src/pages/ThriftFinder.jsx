@@ -1,6 +1,10 @@
 import React from "react";
 import Container from "../Components/Container";
 import { MdArrowOutward } from "react-icons/md";
+import ReviewsImage from "../images/Review.png";
+import AddImage from "../images/Add.png";
+import ProjectGoals from "../images/Sign-up.png";
+import CoverImage from "../images/Cover.png";
 
 function ThriftFinder() {
   const details = [
@@ -40,7 +44,7 @@ function ThriftFinder() {
         <div className="h-[580px] mb-20 ">
           <img
             className="w-full h-full object-cover rounded-2xl"
-            src="../images/Cover.png"
+            src={CoverImage}
             alt="cover image"
           />
         </div>
@@ -101,8 +105,8 @@ function ThriftFinder() {
           <div className="h-[315px] ">
             <img
               className="w-full h-full object-cover rounded-2xl"
-              src="../images/Sign-up.png"
-              alt=""
+              src={ProjectGoals}
+              alt="Project Goals"
             />
           </div>
         </div>
@@ -199,7 +203,7 @@ function ThriftFinder() {
             the products the shop sells.
           </p>
           <div>
-            <img src="../images/Add.png" alt="" />
+            <img src={AddImage} alt="Add Image" />
           </div>
         </div>
         <div className="mb-8">
@@ -209,7 +213,7 @@ function ThriftFinder() {
             shopping experience
           </p>
           <div>
-            <img src="../images/Review.png" alt="" />
+            <img src={ReviewsImage} alt="Reviews Image" />
           </div>
         </div>
         <div>
