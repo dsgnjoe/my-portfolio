@@ -12,7 +12,7 @@ const MyProjects = () => {
       </h4>
 
       {/* Projects Container */}
-      <div className="flex flex-col gap-20 mb-20">
+      <div className="flex flex-col gap-10 md:gap-20 mb-8 md:mb-20">
         {/* first project */}
         <div>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
@@ -34,8 +34,10 @@ const MyProjects = () => {
               </div>
 
               <div>
-                <h4 className="text-[40px] font-bold pb-3">ThriftFinder</h4>
-                <p className="text-[#525866]  pb-3 md:pb-12">
+                <h4 className="text-2xl md:text-[40px] font-bold pb-3">
+                  ThriftFinder
+                </h4>
+                <p className="text-sm md:text-base text-[#525866]  pb-3 md:pb-12">
                   A mobile application enhancing the shopping experience by
                   curating Instagram shops. Users discover, add, and review
                   shops, fostering a community-driven platform for shopping
@@ -57,7 +59,7 @@ const MyProjects = () => {
 
         {/* second project */}
         <div>
-          <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
+          <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-6">
             <div className="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2 ">
               <div className="flex flex-wrap gap-4 mb-6">
                 <div className="rounded-full px-3 py-2 flex-shrink-0 bg-[#FDEBFF] w-fit">
@@ -69,10 +71,10 @@ const MyProjects = () => {
               </div>
 
               <div>
-                <h4 className="text-[40px] font-bold pb-3">
+                <h4 className="text-2xl md:text-[40px] font-bold pb-3">
                   CitizenApp Website
                 </h4>
-                <p className="text-[#525866]  pb-3 md:pb-12">
+                <p className="text-sm md:text-base text-[#525866]  pb-3 md:pb-12">
                   This app connects you to official public notices from all arms
                   and institutions of government. The CitizenApp connects all
                   your interactions with the government into one seamless
@@ -101,7 +103,7 @@ const MyProjects = () => {
 
         {/* third project */}
         <div>
-          <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-6">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
             <div className="bg-[#ffdcc2] p-6 lg:p-12 lg:w-3/4 rounded-lg ">
               <img
                 src={kriblink}
@@ -121,22 +123,23 @@ const MyProjects = () => {
               </div>
 
               <div>
-                <h4 className="text-[24px] md:text-[40px] font-bold pb-3">
+                <h4 className="text-2xl md:text-[40px] font-bold pb-3">
                   Kriblink
                 </h4>
-                <p className="text-[#525866]  pb-3 md:pb-12">
+                <p className="text-sm md:text-base text-[#525866]  pb-3 md:pb-12">
                   A platform that helps students easily find safe, affordable,
                   and convenient off-campus accommodation with verified listings
                   and smart search tools.
                 </p>
 
-                <a
+                {/* <a
                   href="/kriblink"
                   className="text-black font-medium flex items-center gap-2"
                 >
                   View Prototype
                   <MdArrowOutward />
-                </a>
+                </a> */}
+                <p className="text-black font-medium">Coming Soon!</p>
               </div>
             </div>
           </div>
