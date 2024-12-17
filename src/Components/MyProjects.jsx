@@ -1,8 +1,8 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
-import kriblink from "../images/Kriblink.png";
-import citizen from "../images/Citizen.png";
-import thriftfinder from "../images/ThriftFinder.png";
+import kriblink from "/images/Kriblink.png";
+import citizen from "/images/Citizen.png";
+import thriftfinder from "/images/ThriftFinder.png";
 
 const MyProjects = () => {
   return (
@@ -81,14 +81,17 @@ const MyProjects = () => {
                   digital experience.
                 </p>
 
-                <a
+                {/* <a
                   href="https://www.citizen.gov.gh/"
                   target="_blank"
                   className="text-black font-medium flex items-center gap-2"
                 >
                   Visit Project
                   <MdArrowOutward />
-                </a>
+                </a> */}
+                <p className="text-sm md:text-base text-[#525866]">
+                  Coming Soon!
+                </p>
               </div>
             </div>
             <div className="bg-[#FFE8A4] p-6 lg:p-14 lg:w-3/4 rounded-lg">

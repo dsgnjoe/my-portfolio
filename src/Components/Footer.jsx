@@ -1,8 +1,8 @@
 import React from "react";
-import { FaBars, FaLinkedin, FaBehance, FaTimes } from "react-icons/fa";
-import { MdArrowOutward } from "react-icons/md";
+import { FaLinkedin, FaBehance } from "react-icons/fa";
+// import { MdArrowOutward } from "react-icons/md";
 
-import logo from "../images/logo.png";
+import logo from "/images/logo.png";
 const Footer = () => {
   return (
     <div>

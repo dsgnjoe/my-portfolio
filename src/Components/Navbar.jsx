@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaLinkedin, FaBehance, FaTimes } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 
-import logo from "../images/logo.png";
+import logo from "/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

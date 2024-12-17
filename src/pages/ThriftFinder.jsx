@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "../Components/Container";
 import { MdArrowOutward } from "react-icons/md";
-import ReviewsImage from "../images/Review.png";
-import AddImage from "../images/Add.png";
-import ProjectGoals from "../images/Sign-up.png";
-import CoverImage from "../images/Cover.png";
-import Onboarding from "../images/Onboarding.png";
-import Viewing from "../images/Find.png";
+import ReviewsImage from "/images/Review.png";
+import AddImage from "/images/Add.png";
+import ProjectGoals from "/images/Sign-up.png";
+import CoverImage from "/images/Cover.png";
+import Onboarding from "/images/Onboarding.png";
+import Viewing from "/images/Find.png";
 
 function ThriftFinder() {
   const details = [

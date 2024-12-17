@@ -1,5 +1,5 @@
 import React from "react";
-import heroPattern from "../images/hero-pattern.svg";
+import heroPattern from "/images/hero-pattern.svg";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
