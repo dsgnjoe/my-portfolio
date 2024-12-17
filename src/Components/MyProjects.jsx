@@ -1,6 +1,6 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
-import kriblink from "../images/kriblink.png";
+import kriblink from "../images/Kriblink.png";
 import citizen from "../images/Citizen.png";
 import thriftfinder from "../images/ThriftFinder.png";
 
