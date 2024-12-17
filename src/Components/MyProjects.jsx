@@ -11,7 +11,7 @@ const MyProjects = () => {
         Featured Works
       </h4>
 
-      {/* Projects Container */}
+      {/* Projects */}
       <div className="flex flex-col gap-10 md:gap-20 mb-8 md:mb-20">
         {/* first project */}
         <div>
