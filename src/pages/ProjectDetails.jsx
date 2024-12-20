@@ -6,7 +6,7 @@ import ThriftFinder from "./ThriftFinder";
 function ProjectDetails() {
   const { id } = useParams();
 
-  console.log(id);
+  // console.log(id);
 
   // switch statement to render dynamic layout for projects
   switch (id) {

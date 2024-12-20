@@ -3,6 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 import kriblink from "/images/Kriblink.png";
 import citizen from "/images/Citizen.png";
 import thriftfinder from "/images/ThriftFinder.png";
+import { motion } from "motion/react";
 
 const MyProjects = () => {
   return (
@@ -81,17 +82,14 @@ const MyProjects = () => {
                   digital experience.
                 </p>
 
-                {/* <a
+                <a
                   href="https://www.citizen.gov.gh/"
                   target="_blank"
                   className="text-black font-medium flex items-center gap-2"
                 >
                   Visit Project
                   <MdArrowOutward />
-                </a> */}
-                <p className="text-sm md:text-base text-[#525866]">
-                  Coming Soon!
-                </p>
+                </a>
               </div>
             </div>
             <div className="bg-[#FFE8A4] p-6 lg:p-14 lg:w-3/4 rounded-lg">
@@ -107,13 +105,28 @@ const MyProjects = () => {
         {/* third project */}
         <div>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
-            <div className="bg-[#ffdcc2] p-6 lg:p-12 lg:w-3/4 rounded-lg ">
+            <div className="bg-[#ffdcc2] p-6 lg:p-14 lg:w-3/4 rounded-lg ">
               <img
                 src={kriblink}
                 alt=""
                 className="rounded-lg transform transition duration-500 hover:scale-105"
               />
             </div>
+            {/* <div className="bg-[#ffdcc2] p-6 lg:p-12 lg:w-3/4 rounded-lg ">
+              <motion.div
+                whileHover={{ scale: 1.0 }} // Increases size for zoom effect
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                style={{ overflow: "hidden" }} // Ensures smooth zoom effect without overflow issues
+              >
+                <motion.img
+                  src={kriblink}
+                  alt=""
+                  className="rounded-lg overflow-clip"
+                  style={{ transformOrigin: "center" }} // Ensures zoom happens from the center
+                  whileHover={{ scale: 1.2 }} // Adjust scale for hover zoom
+                />
+              </motion.div>
+            </div> */}
 
             <div className="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
               <div className="flex flex-wrap gap-4 mb-6">

@@ -1,6 +1,7 @@
 import React from "react";
 import heroPattern from "/images/hero-pattern.svg";
 import { useEffect, useState } from "react";
+import Animate from "./Animate";
 
 const Hero = () => {
   const colors = [
@@ -75,9 +76,10 @@ const Hero = () => {
           </div>
 
           <div className="mt-16 lg:text-right">
-            <p className="text-[#868C98]">
+            {/* <p className="text-[#868C98]">
               "Design is thinking made visual." - Saul Bass
-            </p>
+            </p> */}
+            <Animate />
           </div>
         </div>
       </div>
