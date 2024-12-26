@@ -45,7 +45,7 @@ const MyProjects = () => {
                   enthusiasts.
                 </p>
 
-                <button className="border border-black rounded-full px-4 py-3 text-center  flex items-center gap-2">
+                {/* <button className="border border-black rounded-full px-4 py-3 text-center  flex items-center gap-2">
                   <a
                     href="/thrift-finder"
                     target=""
@@ -54,15 +54,15 @@ const MyProjects = () => {
                     Visit Case Study
                     <MdArrowOutward />
                   </a>
-                </button>
-                {/* <a
+                </button> */}
+                <a
                   href="/thrift-finder"
                   target=""
-                  className="text-black font-medium flex items-center gap-2  "
+                  className="text-black font-medium flex items-center gap-2 hover:text-gray-700"
                 >
                   Visit Case Study
                   <MdArrowOutward />
-                </a> */}
+                </a>
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ const MyProjects = () => {
                 <a
                   href="https://www.citizen.gov.gh/"
                   target="_blank"
-                  className="text-black font-medium flex items-center gap-2"
+                  className="text-black font-medium flex items-center gap-2  hover:text-gray-700"
                 >
                   Visit Project
                   <MdArrowOutward />

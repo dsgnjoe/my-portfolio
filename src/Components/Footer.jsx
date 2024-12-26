@@ -14,6 +14,15 @@ const Footer = () => {
           <ul className="flex flex-col md:flex-row items-center gap-8">
             <li>
               <a
+                href="/about"
+                target="_blank"
+                className="text-[#525866] hover:text-gray-400"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://drive.google.com/file/d/1Uezx2LXyztz483zrjNpfOCBI0I81EhE-/view?usp=drive_link"
                 target="_blank"
                 className="text-[#525866] hover:text-gray-400"

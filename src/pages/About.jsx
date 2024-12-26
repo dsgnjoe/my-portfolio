@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const About = () => {
   return (
-    <div className="my-10 h-[80vh]">
+    <div className="my-10">
       <Container>
         <div className="flex flex-col gap-3">
           <h1 className="text-[28px] md:text-5xl font-bold mb-2 leading-snug">
@@ -17,7 +17,7 @@ const About = () => {
             experiences that solve real problems and enhance everyday
             interactions.
           </p>
-          <p className="text-sm md:text-base text-gray-700 mb-2">
+          <p className="text-sm md:text-base text-gray-700 mb-8">
             I’m committed to continuous learning and growth, always refining my
             skills to deliver better solutions. Beyond design, I have a strong
             interest in frontend development. Writing code allows me to deepen
@@ -26,32 +26,13 @@ const About = () => {
             bridge the gap between design and implementation.
           </p>
 
-          {/* <button
-            className="border w-auto border-black bg-black rounded-full px-4 py-3 text-center flex items-center gap-2 text-white"
-            type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("mailto:kwabenaadofo330@gmail.com", "_blank");
-            }}
-          >
-            Let's Talk
-            <MdArrowOutward />
-          </button> */}
-          {/* <a
-            href="mailto:kwabenaadofo330@gmail.com"
-            target="_blank"
-            className="text-white bg-black rounded-full  px-3 py-2 flex items-center gap-2 text-[14px]"
-          >
-            Let's Talk
-            <MdArrowOutward />
-          </a> */}
           <div>
-            <p className="text-[20px] font-semibold text-gray-700 mb-2">
+            <p className="text-base md:text-[20px] font-semibold text-gray-700 mb-3 md:mb-4">
               My Experience
             </p>
-            <div className="py-6 border border-gray-200 rounded-md">
+            <div className="py-4 md:py-6 border border-gray-200 rounded-md">
               <div>
-                <div className="flex justify-between px-6 border-b pb-6">
+                <div className="flex justify-between px-4 md:px-6 border-b  pb-4 md:pb-6">
                   <div>
                     <p className="text-lg md:text-[24px] font-semibold">
                       UX Designer
@@ -64,7 +45,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <div className="flex justify-between px-6 border-b p-6">
+                <div className="flex justify-between px-4 md:px-6 border-b p-4 md:sp-6">
                   <div>
                     <p className="text-lg md:text-[24px] font-semibold">
                       UX/UI Designer
@@ -77,7 +58,7 @@ const About = () => {
                     Jan 2024 - Dec 2024
                   </p>
                 </div>
-                <div className="flex justify-between px-6 pt-6">
+                <div className="flex justify-between px-4 md:px-6 pt-4 md:pt-6">
                   <div>
                     <p className="text-lg md:text-[24px] font-semibold">
                       UX Designer
