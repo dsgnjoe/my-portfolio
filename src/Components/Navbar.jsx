@@ -29,8 +29,8 @@ const Navbar = () => {
 
           <ul className="hidden lg:flex items-center space-x-10">
             <li>
-              <a href="#works" className="text-[#525866] hover:text-gray-400">
-                Works
+              <a href="/about" className="text-[#525866] hover:text-gray-400">
+                About
               </a>
             </li>
             <li>
@@ -76,6 +76,8 @@ const Navbar = () => {
         </div>
       </nav>
 
+      {/* Mobile Nav */}
+
       {isOpen && (
         <div className="lg:hidden fixed bottom-0 top-0 left-0 w-full h-full bg-white z-50 flex flex-col transition-all">
           <div className="p-4 flex justify-between items-center">
@@ -94,11 +96,11 @@ const Navbar = () => {
           <ul className="space-y-4 flex flex-col items-center justify-center h-full">
             <li>
               <a
-                href="#works"
+                href="/about"
                 className="text-[#525866] text-2xl hover:text-gray-400"
                 onClick={toggleSidebar}
               >
-                Works
+                About
               </a>
             </li>
             <li>

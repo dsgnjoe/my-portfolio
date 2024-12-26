@@ -45,14 +45,24 @@ const MyProjects = () => {
                   enthusiasts.
                 </p>
 
-                <a
+                <button className="border border-black rounded-full px-4 py-3 text-center  flex items-center gap-2">
+                  <a
+                    href="/thrift-finder"
+                    target=""
+                    className="text-black font-medium flex items-center gap-2  "
+                  >
+                    Visit Case Study
+                    <MdArrowOutward />
+                  </a>
+                </button>
+                {/* <a
                   href="/thrift-finder"
                   target=""
-                  className="text-black font-medium flex items-center gap-2 "
+                  className="text-black font-medium flex items-center gap-2  "
                 >
                   Visit Case Study
                   <MdArrowOutward />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -112,21 +122,6 @@ const MyProjects = () => {
                 className="rounded-lg transform transition duration-500 hover:scale-105"
               />
             </div>
-            {/* <div className="bg-[#ffdcc2] p-6 lg:p-12 lg:w-3/4 rounded-lg ">
-              <motion.div
-                whileHover={{ scale: 1.0 }} // Increases size for zoom effect
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                style={{ overflow: "hidden" }} // Ensures smooth zoom effect without overflow issues
-              >
-                <motion.img
-                  src={kriblink}
-                  alt=""
-                  className="rounded-lg overflow-clip"
-                  style={{ transformOrigin: "center" }} // Ensures zoom happens from the center
-                  whileHover={{ scale: 1.2 }} // Adjust scale for hover zoom
-                />
-              </motion.div>
-            </div> */}
 
             <div className="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
               <div className="flex flex-wrap gap-4 mb-6">

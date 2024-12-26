@@ -26,7 +26,7 @@ function ThriftFinder() {
           <h1 className="text-[28px] md:text-5xl font-bold mb-2 leading-snug">
             Simplifying Instagram Shop Discovery With ThriftFinder
           </h1>
-          <p className="text-sm md:text-base text-gray-700s mb-2">
+          <p className="text-sm md:text-base text-gray-700 mb-2">
             A mobile application enhancing the shopping experience by curating
             Instagram shops.
           </p>
