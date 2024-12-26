@@ -45,7 +45,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <div className="flex justify-between px-4 md:px-6 border-b p-4 md:sp-6">
+                <div className="flex justify-between px-4 md:px-6 border-b p-4 md:p-6">
                   <div>
                     <p className="text-lg md:text-[24px] font-semibold">
                       UX/UI Designer
