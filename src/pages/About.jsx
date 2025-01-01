@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="my-10">
       <Container>
-        <div className="flex flex-col gap-3">
+        <div className="flex items-start flex-col gap-3">
           <h1 className="text-[28px] md:text-5xl font-bold mb-2 leading-snug">
             About Me.
           </h1>
@@ -17,7 +17,7 @@ const About = () => {
             experiences that solve real problems and enhance everyday
             interactions.
           </p>
-          <p className="text-sm md:text-base text-gray-700 mb-8">
+          <p className="text-sm md:text-base text-gray-700 mb-4">
             I’m committed to continuous learning and growth, always refining my
             skills to deliver better solutions. Beyond design, I have a strong
             interest in frontend development. Writing code allows me to deepen
@@ -26,7 +26,10 @@ const About = () => {
             bridge the gap between design and implementation.
           </p>
 
-          <div>
+          <button className="px-6 py-4 bg-black text-white rounded-full flex items-center gap-3 mb-6">
+            Let's Talk <MdArrowOutward />
+          </button>
+          <div className="w-full">
             <p className="text-base md:text-[20px] font-semibold text-gray-700 mb-3 md:mb-4">
               My Experience
             </p>
