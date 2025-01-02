@@ -93,7 +93,10 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <ul className="space-y-4 flex flex-col items-center justify-center h-full">
+          <ul
+            className="space-y-8
+           flex flex-col items-center justify-center h-full"
+          >
             <li>
               <a
                 href="/about"
