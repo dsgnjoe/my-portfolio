@@ -27,7 +27,7 @@ const MyProjects = () => {
             <div className="col-span-2 px-0 py-4 lg:p-4 lg:w-1/2">
               <div className="flex flex-wrap gap-4 mb-6">
                 <div className="rounded-full px-3 py-2 flex-shrink-0 bg-[#FDEBFF] w-fit">
-                  Web App
+                  Mobile App
                 </div>
                 <div className="rounded-full px-3 py-2 flex-shrink-0 bg-[#EFFAF6] w-fit">
                   Design
