@@ -30,19 +30,21 @@ const About = () => {
             Let's Talk <MdArrowOutward />
           </button>
           <div className="w-full">
-            <p className="text-base md:text-[20px] font-semibold text-gray-700 mb-3 md:mb-4">
+            <p className="text-base md:text-[20px] font-semibold text-gray-800 mb-3 md:mb-4">
               My Experience
             </p>
             <div className="py-4 md:py-6 border border-gray-200 rounded-md">
               <div>
                 <div className="flex justify-between px-4 md:px-6 border-b  pb-4 md:pb-6">
                   <div>
-                    <p className="text-lg md:text-[24px] font-semibold">
+                    <p className="text-lg md:text-[24px] text-gray-800 font-semibold">
                       UX Designer
                     </p>
-                    <p className="text-gray-500 text-sm md:text-base">Hubtel</p>
+                    <p className="text-gray-500 text-sm  md:text-base">
+                      Hubtel
+                    </p>
                   </div>
-                  <p className="text-gray-800 text-sm md:text-base">
+                  <p className="text-gray-700 text-sm md:text-base font-medium">
                     Mar 2024 - Present
                   </p>
                 </div>
@@ -50,25 +52,25 @@ const About = () => {
               <div>
                 <div className="flex justify-between px-4 md:px-6 border-b p-4 md:p-6">
                   <div>
-                    <p className="text-lg md:text-[24px] font-semibold">
+                    <p className="text-lg md:text-[24px] text-gray-800 font-semibold">
                       UX/UI Designer
                     </p>
                     <p className="text-gray-500 text-sm md:text-base">
                       Dataware Tech
                     </p>
                   </div>
-                  <p className="text-gray-800 text-sm md:text-base">
+                  <p className="text-gray-700 text-sm md:text-base font-medium">
                     Jan 2024 - Dec 2024
                   </p>
                 </div>
                 <div className="flex justify-between px-4 md:px-6 pt-4 md:pt-6">
                   <div>
-                    <p className="text-lg md:text-[24px] font-semibold">
+                    <p className="text-lg md:text-[24px] text-gray-800 font-semibold">
                       UX Designer
                     </p>
                     <p className="text-gray-500 text-sm md:text-base">Brolly</p>
                   </div>
-                  <p className="text-gray-800 text-sm md:text-base">
+                  <p className="text-gray-700 text-sm md:text-base font-medium">
                     Sept 2022 - Jun 2023
                   </p>
                 </div>
