@@ -33,7 +33,7 @@ const Navbar = () => {
                 <a
                   href="https://drive.google.com/file/d/1Uezx2LXyztz483zrjNpfOCBI0I81EhE-/view?usp=drive_link"
                   target="_blank"
-                  className="text-[#525866] hover:text-gray-400"
+                  className="text-black hover:text-gray-600"
                 >
                   CV
                 </a>
@@ -42,7 +42,7 @@ const Navbar = () => {
                 <a
                   href="https://www.linkedin.com/in/josephadofo/"
                   target="_blank"
-                  className="text-[#525866] hover:text-gray-400 flex items-center gap-2"
+                  className="text-black hover:text-gray-600 flex items-center gap-2"
                 >
                   {/* <FaLinkedin /> */}
                   LinkedIn
