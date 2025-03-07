@@ -14,7 +14,7 @@ const MyProjects = () => {
           {/* first project */}
           <div>
             <motion.div
-              className="relative  rounded-2xl overflow-hidden cursor-pointer"
+              className="relative  rounded-2xl overflow-hidden cursor-pointer h-full"
               whileHover={{ scale: 1.0 }}
             >
               <motion.div
@@ -62,7 +62,7 @@ const MyProjects = () => {
           {/* second project */}
           <div>
             <motion.div
-              className="relative  rounded-2xl overflow-hidden cursor-pointer"
+              className="relative  rounded-2xl overflow-hidden cursor-pointer h-full"
               whileHover={{ scale: 1.0 }}
             >
               <motion.div
@@ -112,7 +112,7 @@ const MyProjects = () => {
           {/* third project */}
           <div>
             <motion.div
-              className="relative  rounded-2xl overflow-hidden cursor-pointer"
+              className="relative  rounded-2xl overflow-hidden cursor-pointer h-full"
               whileHover={{ scale: 1.0 }}
             >
               <motion.div
@@ -180,7 +180,7 @@ const MyProjects = () => {
           {/* fifth project */}
           <div>
             <motion.div
-              className="relative  rounded-2xl overflow-hidden cursor-pointer"
+              className="relative  rounded-2xl overflow-hidden cursor-pointer h-full"
               whileHover={{ scale: 1.0 }}
             >
               <motion.div
