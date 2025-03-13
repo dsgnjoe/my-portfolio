@@ -10,12 +10,19 @@ const MyProjects = () => {
   return (
     <div className="container px-5 mx-auto pb-20" id="works">
       <Container>
-        <div className="grid grid-cols-2 gap-10">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* first project */}
           <div>
             <motion.div
               className="relative  rounded-2xl overflow-hidden cursor-pointer h-full"
               whileHover={{ scale: 1.0 }}
+                onClick={() => {
+                if (window.innerWidth <= 768) {
+                  // Trigger hover effect on click for mobile devices
+                  window.location.href = "/thrift-finder";
+                }
+                }}
             >
               <motion.div
                 className="absolute inset-0 bg-[#C2D6FF]/80 border-4 border-[#EBF1FF] flex flex-col items-start justify-center text-white opacity-0 backdrop-blur-lg p-8 rounded-2xl"
@@ -51,7 +58,7 @@ const MyProjects = () => {
                 <div className="px-6 flex-1 flex justify-center">
                   <img
                     src={thriftfinder}
-                    alt="cover image"
+                    alt="ThriftFinder"
                     className="rounded-lg"
                   />
                 </div>
@@ -64,6 +71,12 @@ const MyProjects = () => {
             <motion.div
               className="relative  rounded-2xl overflow-hidden cursor-pointer h-full"
               whileHover={{ scale: 1.0 }}
+              onClick={() => {
+                if (window.innerWidth <= 768) {
+                  // Trigger hover effect on click for mobile devices
+                  window.location.href = "/thrift-finder";
+                }
+                }}
             >
               <motion.div
                 className="absolute inset-0 bg-[#FFDAC2]/80 border-4 border-[#FEF3EB] flex flex-col items-start justify-center text-white opacity-0 backdrop-blur-lg p-8 rounded-2xl"
@@ -101,7 +114,7 @@ const MyProjects = () => {
                 <div className="px-6 flex-1 flex justify-center pb-6">
                   <img
                     src={kriblink}
-                    alt="cover image"
+                    alt="Kriblink"
                     className="rounded-lg"
                   />
                 </div>
@@ -114,6 +127,12 @@ const MyProjects = () => {
             <motion.div
               className="relative  rounded-2xl overflow-hidden cursor-pointer h-full"
               whileHover={{ scale: 1.0 }}
+              onClick={() => {
+                if (window.innerWidth <= 768) {
+                  // Trigger hover effect on click for mobile devices
+                  window.location.href = "/thrift-finder";
+                }
+                }}
             >
               <motion.div
                 className="absolute inset-0 bg-[#CBF5E5]/80 border-4 border-[#EFFAF6] flex flex-col items-start justify-center text-white opacity-0 backdrop-blur-lg p-8 rounded-2xl"
@@ -151,7 +170,7 @@ const MyProjects = () => {
                 <div className="px-6 flex-1 flex justify-center pb-6">
                   <img
                     src={kriblink}
-                    alt="cover image"
+                    alt="Kriblink"
                     className="rounded-lg"
                   />
                 </div>
@@ -164,6 +183,12 @@ const MyProjects = () => {
             <motion.div
               className="relative  rounded-2xl overflow-hidden cursor-pointer h-full"
               whileHover={{ scale: 1.0 }}
+              onClick={() => {
+                if (window.innerWidth <= 768) {
+                  // Trigger hover effect on click for mobile devices
+                  window.location.href = "/thrift-finder";
+                }
+                }}
             >
               <motion.div
                 className="absolute inset-0 bg-[#C2EFFF]/80 border-4 border-[#EFFAF6] flex flex-col items-start justify-center text-white opacity-0 backdrop-blur-lg p-8 rounded-2xl"
@@ -199,7 +224,7 @@ const MyProjects = () => {
                 <div className="px-6 flex-1 flex justify-center pb-6">
                   <img
                     src={kriblink}
-                    alt="cover image"
+                    alt="Kriblink"
                     className="rounded-lg"
                   />
                 </div>
