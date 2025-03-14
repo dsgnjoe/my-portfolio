@@ -16,7 +16,7 @@ const Hero = () => {
             Creative Problem Solver
           </p>
           <p className="text-base md:text-xl max-w-6xl text-gray-600 pb-5">
-            With 3 years+ of product design experience, I turn complex problems
+            With 3+ years of product design experience, I turn complex problems
             into intuitive and engaging digital experiences that not only
             work—but wow. Every pixel and interaction is crafted to connect with
             users while driving real value and transformation for businesses.
