@@ -11,8 +11,8 @@ const Hero = () => {
             Hi, I’m Joseph.
           </h6>
           <p className="text-[28px] md:text-6xl font-bold pb-4">
-            A <span className="text-teal-700">Product</span> Designer,{" "}
-            <span className="text-orange-700">Strategic</span> Thinker, and
+            A Product <span className="text-orange-700"> Designer</span>,{" "}
+            Strategic <span className="text-teal-700">Thinker</span>, and
             Creative Problem Solver
           </p>
           <p className="text-base md:text-xl max-w-6xl text-gray-600 pb-5">
