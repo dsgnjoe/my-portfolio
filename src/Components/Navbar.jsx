@@ -76,7 +76,7 @@ const Navbar = () => {
                 onClick={toggleSidebar}
                 className="w-10 h-10 bg-black text-white flex justify-center items-center rounded-full focus:outline-none"
               >
-                <FaTimes />
+                Heyy
               </button>
             </div>
           </div>

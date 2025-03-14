@@ -4,10 +4,10 @@ import { GoCopy } from "react-icons/go";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div className="mb-8 md:mb-0">
       <Container>
-        <div className="container px-5 lg:py-[120px]">
-          <h6 className="text-base pb-5 lg:text-xl text-gray-500">
+        <div className="container px-3 py-5 lg:py-[120px] ">
+          <h6 className="text-base pb-3 lg:pb-5 lg:text-xl text-gray-500">
             Hi, I’m Joseph.
           </h6>
           <p className="text-[28px] md:text-6xl font-bold pb-4">

@@ -8,21 +8,20 @@ import Container from "./Container";
 
 const MyProjects = () => {
   return (
-    <div className="container px-5 mx-auto pb-20" id="works">
+    <div className="container px-3 mx-auto  pb-20" id="works">
       <Container>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* first project */}
           <div>
             <motion.div
               className="relative  rounded-2xl overflow-hidden cursor-pointer h-full"
               whileHover={{ scale: 1.0 }}
-                onClick={() => {
+              onClick={() => {
                 if (window.innerWidth <= 768) {
                   // Trigger hover effect on click for mobile devices
                   window.location.href = "/thrift-finder";
                 }
-                }}
+              }}
             >
               <motion.div
                 className="absolute inset-0 bg-[#C2D6FF]/80 border-4 border-[#EBF1FF] flex flex-col items-start justify-center text-white opacity-0 backdrop-blur-lg p-8 rounded-2xl"
@@ -32,7 +31,7 @@ const MyProjects = () => {
               >
                 <div className="flex flex-col gap-8 items-start">
                   <div className="flex flex-col gap-3">
-                    <p className="text-base text-[#253EA7]">ThriftFinder</p>
+                    <p className=" md:text-base text-[#253EA7]">ThriftFinder</p>
                     <h3 className="text-2xl font-semibold text-black">
                       Making Instagram Shop Discovery Easier With ThriftFinder
                     </h3>
@@ -50,8 +49,10 @@ const MyProjects = () => {
               </motion.div>
               <div className="bg-[#C2D6FF] h-full flex flex-col gap-3 rounded-2xl border-4 border-[#EBF1FF]">
                 <div className="flex flex-col gap-2 p-6">
-                  <p className="text-base text-[#162664]">ThriftFinder</p>
-                  <p className="text-2xl font-semibold">
+                  <p className="text-sm md:text-base text-[#162664]">
+                    ThriftFinder
+                  </p>
+                  <p className=" text-base md:text-2xl font-semibold">
                     Making Instagram Shop Discovery Easier With ThriftFinder
                   </p>
                 </div>
@@ -76,7 +77,7 @@ const MyProjects = () => {
                   // Trigger hover effect on click for mobile devices
                   window.location.href = "/thrift-finder";
                 }
-                }}
+              }}
             >
               <motion.div
                 className="absolute inset-0 bg-[#FFDAC2]/80 border-4 border-[#FEF3EB] flex flex-col items-start justify-center text-white opacity-0 backdrop-blur-lg p-8 rounded-2xl"
@@ -105,18 +106,16 @@ const MyProjects = () => {
               </motion.div>
               <div className="bg-[#FFDAC2] flex flex-col gap-3 rounded-2xl border-4 border-[#FEF3EB]">
                 <div className="flex flex-col gap-2 p-6">
-                  <p className="text-base text-[#6E330C]">Kriblink</p>
-                  <p className="text-2xl font-semibold">
+                  <p className="text-sm md:text-base text-[#6E330C]">
+                    Kriblink
+                  </p>
+                  <p className="text-base md:text-2xl font-semibold">
                     Simplifying Off-Campus Housing for Students (Wins,
                     Struggles, and Lessons)
                   </p>
                 </div>
                 <div className="px-6 flex-1 flex justify-center pb-6">
-                  <img
-                    src={kriblink}
-                    alt="Kriblink"
-                    className="rounded-lg"
-                  />
+                  <img src={kriblink} alt="Kriblink" className="rounded-lg" />
                 </div>
               </div>
             </motion.div>
@@ -132,7 +131,7 @@ const MyProjects = () => {
                   // Trigger hover effect on click for mobile devices
                   window.location.href = "/thrift-finder";
                 }
-                }}
+              }}
             >
               <motion.div
                 className="absolute inset-0 bg-[#CBF5E5]/80 border-4 border-[#EFFAF6] flex flex-col items-start justify-center text-white opacity-0 backdrop-blur-lg p-8 rounded-2xl"
@@ -161,18 +160,16 @@ const MyProjects = () => {
               </motion.div>
               <div className="bg-[#CBF5E5] flex flex-col gap-3 rounded-2xl border-4 border-[#EFFAF6]">
                 <div className="flex flex-col gap-2 p-6">
-                  <p className="text-base text-[#176448]">EasySell</p>
-                  <p className="text-2xl font-semibold">
+                  <p className="text-sm md:text-base text-[#176448]">
+                    EasySell
+                  </p>
+                  <p className="text-base md:text-2xl font-semibold">
                     Simplifying Off-Campus Housing for Students (Wins,
                     Struggles, and Lessons)
                   </p>
                 </div>
                 <div className="px-6 flex-1 flex justify-center pb-6">
-                  <img
-                    src={kriblink}
-                    alt="Kriblink"
-                    className="rounded-lg"
-                  />
+                  <img src={kriblink} alt="Kriblink" className="rounded-lg" />
                 </div>
               </div>
             </motion.div>
@@ -188,7 +185,7 @@ const MyProjects = () => {
                   // Trigger hover effect on click for mobile devices
                   window.location.href = "/thrift-finder";
                 }
-                }}
+              }}
             >
               <motion.div
                 className="absolute inset-0 bg-[#C2EFFF]/80 border-4 border-[#EFFAF6] flex flex-col items-start justify-center text-white opacity-0 backdrop-blur-lg p-8 rounded-2xl"
@@ -216,24 +213,22 @@ const MyProjects = () => {
               </motion.div>
               <div className="bg-[#C2EFFF] flex flex-col gap-3 rounded-2xl border-4 border-[#EBFAFF]">
                 <div className="flex flex-col gap-2 p-6">
-                  <p className="text-base text-[#164564]">Betta UI</p>
-                  <p className="text-2xl font-semibold">
+                  <p className="text-sm md:text-base text-[#164564]">
+                    Betta UI
+                  </p>
+                  <p className="text-base md:text-2xl font-semibold">
                     A comprehensive mini design system for very small projects
                   </p>
                 </div>
                 <div className="px-6 flex-1 flex justify-center pb-6">
-                  <img
-                    src={kriblink}
-                    alt="Kriblink"
-                    className="rounded-lg"
-                  />
+                  <img src={kriblink} alt="Kriblink" className="rounded-lg" />
                 </div>
               </div>
             </motion.div>
           </div>
         </div>
 
-        <div className="bg-[#F6F8FA] border border-[#E2E4E9] rounded-lg p-10 flex flex-col items-center mt-20">
+        <div className="bg-[#F6F8FA] border border-[#E2E4E9] rounded-lg p-10 flex flex-col items-center mt-10 md:mt-20">
           <p className="text-[20px] lg:text-2xl text-center font-medium lg:mx-48  mb-3 md:mb-4">
             My design philosophy is rooted in empathy and a deep understanding
             of the end user.

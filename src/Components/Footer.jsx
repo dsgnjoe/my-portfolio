@@ -11,12 +11,12 @@ const Footer = () => {
               <img src={logo} alt="" />
             </a>
 
-            <ul className="hidden lg:flex items-center space-x-10">
+            <ul className="flex items-center space-x-10">
               <li>
                 <a
                   href="https://drive.google.com/file/d/1Uezx2LXyztz483zrjNpfOCBI0I81EhE-/view?usp=drive_link"
                   target="_blank"
-                  className="text-[#525866] hover:text-gray-400"
+                  className="text-black hover:text-gray-700"
                 >
                   CV
                 </a>
@@ -25,7 +25,7 @@ const Footer = () => {
                 <a
                   href="https://www.linkedin.com/in/josephadofo/"
                   target="_blank"
-                  className="text-[#525866] hover:text-gray-400 flex items-center gap-2"
+                  className="text-black hover:text-gray-700 flex items-center gap-2"
                 >
                   LinkedIn
                 </a>
