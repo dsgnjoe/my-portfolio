@@ -12,8 +12,8 @@ const Hero = () => {
           </h6>
           <p className="text-[28px] md:text-6xl font-bold pb-4">
             A Product <span className="text-orange-700"> Designer</span>,{" "}
-            Strategic <span className="text-teal-700">Thinker</span>, and
-            Creative Problem Solver
+            Strategic <span className="text-black">Thinker</span>, and Creative
+            Problem Solver
           </p>
           <p className="text-base md:text-xl max-w-6xl text-gray-600 pb-5">
             With 3+ years of product design experience, I turn complex problems
