@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
+import { FaBars, FaLinkedin, FaBehance, FaTimes, FaFile, FaFileAlt } from "react-icons/fa";
 
 import logo from "/images/logo.svg";
 import Container from "./Container";
@@ -24,7 +25,7 @@ const Navbar = () => {
                 onClick={toggleSidebar}
                 className="w-10 h-10 bg-black text-white flex justify-center items-center rounded-full focus:outline-none"
               >
-                {/* <FaBars /> */}
+                <FaBars />
               </button>
             </div>
 
@@ -65,9 +66,10 @@ const Navbar = () => {
 
       {/* Mobile Nav */}
 
+
       {isOpen && (
-        <div className="lg:hidden fixed bottom-0 top-0 left-0 w-full h-full bg-white z-50 flex flex-col transition-all">
-          <div className="p-4 flex justify-between items-center">
+        <div className="lg:hidden fixed bottom-0 top-0 left-0 w-full h-full bg-white z-50 flex flex-col transition-all ease-in-out">
+          <div className="flex justify-between items-center pt-6 px-8">
             <a href="/" className="text-white text-2xl font-bold">
               <img src={logo} alt="" />
             </a>
@@ -76,63 +78,42 @@ const Navbar = () => {
                 onClick={toggleSidebar}
                 className="w-10 h-10 bg-black text-white flex justify-center items-center rounded-full focus:outline-none"
               >
-                Heyy
+               <FaTimes />
               </button>
             </div>
           </div>
           <ul
-            className="space-y-8
+            className="space-y-14
            flex flex-col items-center justify-center h-full"
           >
             <li>
               <a
-                href="/about"
+                href="https://www.linkedin.com/in/josephadofo/"
                 className="text-[#525866] text-2xl hover:text-gray-400"
                 onClick={toggleSidebar}
               >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://drive.google.com/file/d/1Uezx2LXyztz483zrjNpfOCBI0I81EhE-/view?usp=drive_link"
-                target="_blank"
-                className="text-[#525866] text-2xl hover:text-gray-400"
-                onClick={toggleSidebar}
-              >
-                Resume
+                CV
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/josephadofo/"
-                className="text-[#525866] text-2xl hover:text-gray-400 flex items-center gap-2"
+                className="text-[#525866] text-2xl hover:text-gray-400"
                 onClick={toggleSidebar}
               >
-                <FaLinkedin />
                 LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.behance.net/kwabenaadofo"
-                className="text-[#525866] text-2xl hover:text-gray-400 flex items-center gap-2"
-                onClick={toggleSidebar}
-              >
-                <FaBehance />
-                Behance
               </a>
             </li>
 
             <li>
-              <a
-                href="mailto:kwabenaadofo330@gmail.com"
-                className="text-white bg-black rounded-full  px-3 py-2 flex items-center gap-2"
-              >
-                Let's Talk
-                <MdArrowOutward />
-              </a>
-            </li>
+                <a
+                  href="mailto:kwabenaadofo330@gmail.com"
+                  target="_blank"
+                  className="text-white bg-black rounded-full px-6 py-4 text-[14px]"
+                >
+                  Get In Touch
+                </a>
+              </li>
           </ul>
         </div>
       )}
