@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div>
       <Container>
-        <nav className=" bg-white px-4 py-6 w-full">
+        <nav className=" bg-white md:px-4 py-6 w-full">
           <div className="container mx-auto flex justify-between items-center">
             <a href="/" className="text-white text-2xl font-bold">
               <img src={logo} alt="" />

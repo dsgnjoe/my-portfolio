@@ -128,12 +128,12 @@ function Kriblink() {
           <img
             src="/images/kriblink/hero-desktop.png"
             alt="hero desktop"
-            className="object-cover md:col-span-3 w-full h-full"
+            className="object-contain md:object-cover md:col-span-3 w-full md:h-full"
           />
           <img
             src="/images/kriblink/hero-mobile.png"
             alt="hero mobile"
-            className="w-full object-cover md:col-span-1"
+            className="w-full object-contain md:object-cover md:col-span-1"
           />
         </div>
       ),
@@ -146,12 +146,12 @@ function Kriblink() {
           <img
             src="/images/kriblink/rooms-mobile.png"
             alt="all rooms mobile"
-            className="w-full object-cover md:col-span-1"
+            className="w-full object-contain md:object-cover md:col-span-1"
           />
           <img
             src="/images/kriblink/rooms-desktop.png"
             alt="all rooms desktop"
-            className="object-cover md:col-span-3 h-full"
+            className="object-contain md:object-cover md:col-span-3 md:h-full"
           />
         </div>
       ),
@@ -164,7 +164,7 @@ function Kriblink() {
           <img
             src="/images/kriblink/room-details.png"
             alt="room details"
-            className="object-cover md:col-span-3 h-full"
+            className="object-contain md:object-cover md:col-span-3 md:h-full"
           />
         </div>
       ),
@@ -177,12 +177,12 @@ function Kriblink() {
           <img
             src="/images/kriblink/payment-desktop.png"
             alt="payment desktop"
-            className="object-cover md:col-span-3 h-full"
+            className="object-contain md:object-cover md:col-span-3 md:h-full"
           />
           <img
             src="/images/kriblink/payment-mobile.png"
             alt="payment mobile"
-            className="w-full object-cover md:col-span-1"
+            className="w-full object-contain md:object-cover md:col-span-1"
           />
         </div>
       ),
@@ -194,12 +194,12 @@ function Kriblink() {
           <img
             src="/images/kriblink/booked-room-desktop.png"
             alt="booked room desktop"
-            className="object-cover md:col-span-3 h-full"
+            className="object-contain md:object-cover md:col-span-3 md:h-full"
           />
           <img
             src="/images/kriblink/booked-room-mobile.png"
             alt="booked room mobile"
-            className="w-full object-cover md:col-span-1"
+            className="w-full object-contain md:object-cover md:col-span-1"
           />
         </div>
       ),
@@ -231,9 +231,9 @@ function Kriblink() {
           </div>
         </div>
 
-        <div className="h-[343px] md:h-[580px] mb-10 md:mb-20 ">
+        <div className="md:h-[580px] mb-10 md:mb-20 ">
           <img
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full md:h-full object-contain md:object-cover rounded-2xl"
             src={KriblinkCoverImage}
             alt="cover image"
           />
@@ -267,17 +267,19 @@ function Kriblink() {
         <div className="space-y-8">
           {caseStudyParagraphs.slice(0, 3).map((paragraph, i) => (
             <div key={i} className="space-y-4">
-              <h2 className="text-2xl font-semibold">{paragraph.title}</h2>
+              <h2 className="text-xl lg:text-2xl font-semibold">{paragraph.title}</h2>
 
-              <p className="text-[16px] font-light">{paragraph.description}</p>
+              <p className="text-sm lg:text-[16px] font-light">{paragraph.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="space-y-8 py-6">
+        <div className="space-y-8 py-6 mb-8 lg:mb-12">
           {features.map((feature, i) => (
             <div key={i} className="space-y-4">
+              <div className="lg:pt-10 lg:pb-6">
               <p>{feature.caption}</p>
+              </div>
               {feature.images}
             </div>
           ))}
@@ -286,9 +288,9 @@ function Kriblink() {
         <div className="space-y-8">
           {caseStudyParagraphs.slice(3, 5).map((paragraph, i) => (
             <div key={i} className="space-y-4">
-              <h2 className="text-2xl font-semibold">{paragraph.title}</h2>
+              <h2 className="text-xl lg:text-2xl font-semibold">{paragraph.title}</h2>
 
-              <p className="text-[16px] font-light">{paragraph.description}</p>
+              <p className="text-sm lg:text-[16px] font-light">{paragraph.description}</p>
             </div>
           ))}
         </div>
