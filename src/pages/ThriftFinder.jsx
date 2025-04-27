@@ -18,7 +18,7 @@ function ThriftFinder() {
       value: "User Research, Tasks Flows, Prototyping, Usability Testing",
     },
   ];
-
+  a;
   return (
     <div className="my-10">
       <Container>

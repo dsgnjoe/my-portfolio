@@ -75,7 +75,7 @@ const MyProjects = () => {
               onClick={() => {
                 if (window.innerWidth <= 768) {
                   // Trigger hover effect on click for mobile devices
-                  window.location.href = "/thrift-finder";
+                  window.location.href = "/kriblink";
                 }
               }}
             >
@@ -89,13 +89,13 @@ const MyProjects = () => {
                   <div className="flex flex-col gap-3">
                     <p className="text-base text-[#6E330C]">Kriblink</p>
                     <h3 className="text-2xl font-semibold text-black">
-                      Simplifying Off-Campus Housing for Students (Wins,
-                      Struggles, and Lessons)
+                      Rethinking Student Housing for 15,000+ Non-Resident
+                      Students
                     </h3>
                   </div>
 
                   <a
-                    href="/thrift-finder"
+                    href="/kriblink"
                     target=""
                     className="text-white font-medium flex justify-start items-center gap-2 bg-black px-4 py-3 rounded-full "
                   >
@@ -110,8 +110,7 @@ const MyProjects = () => {
                     Kriblink
                   </p>
                   <p className="text-base md:text-2xl font-semibold">
-                    Simplifying Off-Campus Housing for Students (Wins,
-                    Struggles, and Lessons)
+                    Rethinking Student Housing for 15,000+ Non-Resident Students
                   </p>
                 </div>
                 <div className="px-6 flex-1 flex justify-center pb-6">
