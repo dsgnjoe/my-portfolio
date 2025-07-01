@@ -7,15 +7,30 @@ import Container from "./Container";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+ const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+  
+  const onScroll = () => {
+    if (window.scrollY > 80) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  }
+
+  // Add event listener with cleanup
+  React.useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
 
   return (
     <div>
-      <Container>
-        <nav className=" bg-white md:px-4 py-6 w-full">
+        <nav className={`bg-white px-4 py-4 w-full shadow rounded-2xl z-50 transition-all duration-300  fixed left-0 right-0  mx-auto max-w-[87%] md:max-w-[91%] xl:max-w-[1065px] ${isScrolled ? "top-2 top-unset " : ""}`}>
           <div className="container mx-auto flex justify-between items-center">
             <a href="/" className="text-white text-2xl font-bold">
               <img src={logo} alt="" />
@@ -23,7 +38,7 @@ const Navbar = () => {
             <div className="block lg:hidden">
               <button
                 onClick={toggleSidebar}
-                className="w-10 h-10 bg-black text-white flex justify-center items-center rounded-full focus:outline-none"
+                className="w-10 h-10 bg-black text-white flex justify-center items-center rounded-xl focus:outline-none"
               >
                 <FaBars />
               </button>
@@ -36,7 +51,7 @@ const Navbar = () => {
                   target="_blank"
                   className="text-black hover:text-gray-600"
                 >
-                  CV
+                  Resume
                 </a>
               </li>
               <li>
@@ -54,7 +69,7 @@ const Navbar = () => {
                 <a
                   href="mailto:kwabenaadofo330@gmail.com"
                   target="_blank"
-                  className="text-white bg-black rounded-full  px-6 py-3  text-[14px]"
+                  className="text-white bg-black rounded-lg  px-3.5 py-2.5  text-[14px]"
                 >
                   Get In Touch
                 </a>
@@ -62,21 +77,20 @@ const Navbar = () => {
             </ul>
           </div>
         </nav>
-      </Container>
 
       {/* Mobile Nav */}
 
 
       {isOpen && (
         <div className="lg:hidden fixed bottom-0 top-0 left-0 w-full h-full bg-white z-50 flex flex-col transition-all ease-in-out">
-          <div className="flex justify-between items-center pt-6 px-8">
+          <div className="flex justify-between items-center pt-6 px-8 mt-6">
             <a href="/" className="text-white text-2xl font-bold">
               <img src={logo} alt="" />
             </a>
             <div className="block lg:hidden">
               <button
                 onClick={toggleSidebar}
-                className="w-10 h-10 bg-black text-white flex justify-center items-center rounded-full focus:outline-none"
+                className="w-10 h-10 bg-black text-white flex justify-center items-center rounded-xl focus:outline-none"
               >
                <FaTimes />
               </button>
