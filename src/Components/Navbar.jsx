@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <div>
-        <nav className={`bg-white px-4 py-4 w-full shadow rounded-2xl z-50 transition-all duration-300  fixed left-0 right-0  mx-auto max-w-[87%] md:max-w-[91%] xl:max-w-[1065px] ${isScrolled ? "top-2 top-unset " : ""}`}>
+        <nav className={`bg-white px-4 py-4 w-full shadow rounded-2xl z-50 transition-all duration-300  fixed left-0 right-0  mx-auto max-w-[87%] md:max-w-[91%] xl:max-w-[716px] ${isScrolled ? "top-2 top-unset " : ""}`}>
           <div className="container mx-auto flex justify-between items-center">
             <a href="/" className="text-white text-2xl font-bold">
               <img src={logo} alt="" />

@@ -29,7 +29,10 @@ const Footer = () => {
 							</button>
 						</div>
 						<ul className="flex justify-between items-center border-t pt-5 w-full lg:max-w-[460px] mx-auto border-[#5A36BF]">
-							<p className="text-[14px] flex items-center gap-2">
+							<p
+								className="text-[14px] flex items-center gap-2 cursor-pointer"
+								onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+							>
 								<FaArrowUp />
 								Back To Top
 							</p>
