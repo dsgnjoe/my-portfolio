@@ -40,7 +40,7 @@ const ExperienceSection = () => {
 							<p className="text-[#525866]">{exp.company}</p>
 						</div>
 						<div>
-							<p className="text-[#525866]">{exp.duration}</p>
+							<p className="text-[#525866] text-right text-nowrap">{exp.duration}</p>
 						</div>
 					</div>
                     ))}
