@@ -1,32 +1,39 @@
 import React from "react";
 import Container from "../Components/Container";
-import { GoCopy } from "react-icons/go";
+import messageIcon from "/images/svg/get-in-touch-icon.svg";
+import Navbar from "../Components/Navbar";
+import heroBgPattern from "/images/hero-bg-pattern.png";
+import { RiMessage3Line } from "react-icons/ri";
+
 
 const Hero = () => {
-  return (
-    <div className="mb-8 md:mb-0">
-      <Container>
-        <div className="container px-3 py-5 lg:py-[120px] ">
-          <h6 className="text-base pb-3 lg:pb-5 lg:text-xl text-gray-500">
-            Hi, I’m Joseph.
-          </h6>
-          <p className="text-[28px] md:text-6xl font-bold pb-4">
-            A Product <span className="text-orange-700"> Designer</span>,{" "}
-            Strategic Thinker, and Creative Problem Solver
-          </p>
-          <p className="text-base md:text-xl max-w-6xl text-gray-600 pb-5">
-            With 3+ years of product design experience, I turn complex problems
-            into intuitive and engaging digital experiences that not only
-            work—but wow. Every pixel and interaction is crafted to connect with
-            users while driving real value and transformation for businesses.
-          </p>
-          <button className="px-6 py-3 bg-black text-white rounded-full flex items-center gap-3">
-            <GoCopy /> Copy Email
-          </button>
-        </div>
-      </Container>
-    </div>
-  );
+	return (
+		<div className="mb-8 md:mb-0">
+			<Container className="">
+        <Navbar />
+				<div className="lg:container text-center md:px-3 py-5 md:pb-[160px] pt-[160px] lg:pt-[200px] relative z-10">
+					<h1 className="text-[28px] md:text-5xl mb-2">
+						Hello, I’m Joseph. A{" "}
+						<span className="text-[#525866] font-fraunces">Product Designer</span>
+					</h1>
+					<h1 className="text-[28px] md:text-5xl mb-2">
+						focused on designing experiences that make
+					</h1>
+					<h1 className="text-[28px] md:text-5xl mb-2">
+						life <span className="text-[#525866] font-fraunces">easier</span> and more{" "}
+						<span className="text-[#525866] font-fraunces"> enjoyable</span>.
+					</h1>
+					<div className="text-center mt-8 mb-8">
+						<button className="px-5 py-3 mx-auto transition-all bg-[#C2540A] hover:bg-[#904d20] text-white rounded-xl flex items-center gap-2">
+						  <RiMessage3Line className="text-white" /> Get in Touch
+						</button>
+					</div>
+				</div>
+
+        <img src={heroBgPattern} alt="" className="absolute bottom-0 left-0 right-0 w-full z-0" />
+			</Container>
+		</div>
+	);
 };
 
 export default Hero;
