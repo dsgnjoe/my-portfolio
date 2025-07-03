@@ -11,7 +11,7 @@ const AboutMe = () => {
 					<div className="flex flex-col md:flex-row gap-8 lg:gap-16 mb-2">
 						<div className="md:w-7/12 lg:w-2/3">
 					<h1 className="text-[24px] md:text-4xl mb-6">
-						Designer. Thinker.<br/> <span className="text-[#525866]">Collaborator. </span>
+						Designer <span className="text-[#525866] font-fraunces">&</span> Thinker
 					</h1>
 							<p className="text-[#525866] mb-2 text-lg">
 								I'm a UX designer with over 3 years of experience creating

@@ -14,14 +14,14 @@ const Hero = () => {
 				<div className="lg:container text-center md:px-3 py-5 md:pb-[160px] pt-[160px] lg:pt-[200px] relative z-10">
 					<h1 className="text-[28px] md:text-5xl mb-2">
 						Hello, I’m Joseph. A{" "}
-						<span className="text-[#525866]">Product Designer</span>
+						<span className="text-[#525866] font-fraunces">Product Designer</span>
 					</h1>
 					<h1 className="text-[28px] md:text-5xl mb-2">
 						focused on designing experiences that make
 					</h1>
 					<h1 className="text-[28px] md:text-5xl mb-2">
-						life <span className="text-[#525866]">easier</span> and more{" "}
-						<span className="text-[#525866]"> enjoyable</span>.
+						life <span className="text-[#525866] font-fraunces">easier</span> and more{" "}
+						<span className="text-[#525866] font-fraunces"> enjoyable</span>.
 					</h1>
 					<div className="text-center mt-8 mb-8">
 						<button className="px-5 py-3 mx-auto transition-all bg-[#C2540A] hover:bg-[#904d20] text-white rounded-xl flex items-center gap-2">

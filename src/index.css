@@ -27,7 +27,7 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
+h1, .font-fraunces {
     font-family: "Fraunces", serif;
 
 }
