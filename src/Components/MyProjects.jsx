@@ -6,6 +6,7 @@ import thriftfinder from "/images/ThriftFinder.png";
 import { motion } from "motion/react";
 import Container from "./Container";
 import { image, img } from "motion/react-client";
+import { Link } from "react-router";
 
 const MyProjects = () => {
 	const projects = [
@@ -17,6 +18,7 @@ const MyProjects = () => {
 			tagsArray: ["Housing", "Web App", "UX Research"],
 			tags: 'Housing, Web App, UX Research',
 			link: "https://kriblink.com",
+			caseStudyLink: "/kriblink",
 		}
 	];
 	const noCaseStudyProjects = [
@@ -50,7 +52,7 @@ const MyProjects = () => {
 					<div className="grid grid-cols-1">
 						{/* second project */}
 						{projects.map((project, index) => (
-							<div className="mb-10 md:mb-16" key={index}>
+							<Link to={project.caseStudyLink} className="mb-10 md:mb-16" key={index}>
 						<img src={project.image} className="w-full h-auto mb-4 rounded-2xl max-h-[458px] object-cover" alt="" />
 							<div className="flex flex-col lg:flex-row justify-between gap-4">
 								<div className="grow w-full">
@@ -65,7 +67,7 @@ const MyProjects = () => {
 									</p>
 								</div>
 							</div>
-						</div>
+						</Link>
 						))}
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 						{noCaseStudyProjects.map((project, index) => (
