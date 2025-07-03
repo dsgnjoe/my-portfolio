@@ -20,7 +20,7 @@ const Footer = () => {
 				<div className="container mx-auto mt-[80px] mb-[15px]">
 					<div>
 						<h1 className="text-[24px] md:text-4xl text-center">
-							Have a project in mind? I’m always open to <br /> meaningful
+							Have a project in mind? I’m always open to <br className="hidden lg:block" /> meaningful
 							collaborations and exciting challenges.
 						</h1>
 						<div className="text-center mt-8 mb-8">

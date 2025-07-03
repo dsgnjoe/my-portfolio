@@ -11,7 +11,7 @@ const Hero = () => {
 		<div className="mb-8 md:mb-0">
 			<Container className="">
         <Navbar />
-				<div className="lg:container text-center px-3 py-5 md:pb-[160px] pt-[160px] relative z-10">
+				<div className="lg:container text-center md:px-3 py-5 md:pb-[160px] pt-[160px] lg:pt-[200px] relative z-10">
 					<h1 className="text-[28px] md:text-5xl mb-2">
 						Hello, I’m Joseph. A{" "}
 						<span className="text-[#525866]">Product Designer</span>

@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Recoleta", sans-serif;
+  font-family: "NeueMontreal", serif;
 }
 
 
@@ -28,7 +28,8 @@ html {
 }
 
 h1 {
-  font-family: "Recoleta", sans-serif;
+    font-family: "Fraunces", serif;
+
 }
 
 p, a,li {
@@ -38,6 +39,7 @@ p, a,li {
 button {
   font-family: "NeueMontreal", serif;
 }
+
 .text-dark {
   @apply text-[#0A0D14];
 }
