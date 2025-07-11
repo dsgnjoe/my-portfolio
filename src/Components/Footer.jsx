@@ -43,8 +43,15 @@ const Footer = () => {
               </p>
 
               <div className="flex items-center gap-4">
-                <FaXTwitter className="text-[14px]" />
-                <LuLinkedin className="text-[14px]" />
+                <a href="https://x.com/onlyjoex" target="_blank">
+                  <FaXTwitter className="text-[14px]" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/josephadofo/"
+                  target="_blank"
+                >
+                  <LuLinkedin className="text-[14px]" />
+                </a>
               </div>
             </ul>
           </div>
