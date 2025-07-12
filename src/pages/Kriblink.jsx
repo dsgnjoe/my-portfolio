@@ -166,12 +166,12 @@ function Kriblink() {
 			images: (
 				<div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
 					<img
-						src="/images/kriblink/payment-desktop.png"
+						src="/images/kriblink/bookedroom1.png"
 						alt="payment desktop"
 						className="object-contain md:object-cover w-full h-auto max-h-[471px] rounded-md"
 					/>
 					<img
-						src="/images/kriblink/bookedroom.png"
+						src="/images/kriblink/bookedroom2.png"
 						alt="payment mobile"
 						className="object-contain md:object-cover w-full h-auto max-h-[471px] rounded-md"
 					/>
