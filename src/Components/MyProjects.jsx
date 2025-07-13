@@ -3,6 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 import kriblink from "/images/kriblink/Kriblink.png";
 import citizen from "/images/Citizen.png";
 import thriftfinder from "/images/ThriftFinder.png";
+import betta from "/images/betta.png";
 import { motion } from "motion/react";
 import Container from "./Container";
 import { image, img } from "motion/react-client";
@@ -23,23 +24,20 @@ const MyProjects = () => {
   ];
   const noCaseStudyProjects = [
     {
-      title: "Citizen",
+      title: "CitizenApp Website",
       image: citizen,
-      description:
-        "Citizen is a web app that helps users find and support local businesses in their area, fostering community engagement and economic growth.",
-      tagsArray: ["Community", "Web App", "Local Business"],
-      tags: "Housing, Web App, UX Research",
-      link: "https://www.citizen.gov.gh/",
+      description: "",
+      tags: "Web & Responsive Design",
+      link: "https://citizen.com",
+      ongoing: false,
     },
-    ,
     {
-      title: "ThriftFinder",
-      image: thriftfinder,
-      description:
-        "ThriftFinder is a mobile app that connects thrift store enthusiasts with nearby thrift shops, helping them discover unique finds and sustainable fashion.",
-      tagsArray: ["Sustainability", "Mobile App", "Fashion"],
-      tags: "Housing, Web App, UX Research",
+      title: "Betta UI",
+      image: betta,
+      description: "",
+      tags: "Design System",
       link: "https://thriftfinder.com",
+      ongoing: true,
     },
   ];
   return (
@@ -82,9 +80,17 @@ const MyProjects = () => {
                     alt=""
                   />
                   <div className="flex flex-col gap-2">
-                    <div className="grow w-full">
-                      <h1 className="text-xl">{project.title}</h1>
-                      <p className="text-orange-600">{project.tags}</p>
+                    <div className="grow w-full flex justify-between items-center">
+                      <div>
+                        <h1 className="text-xl">{project.title}</h1>
+                        <p className="text-orange-600">{project.tags}</p>
+                      </div>
+
+                      {project.ongoing && (
+                        <div className="bg-gray-100 rounded-3xl font-semibold py-2.5 px-5 h-full w-fit">
+                          Coming Soon
+                        </div>
+                      )}
                     </div>
                     <div>
                       <p className="text-[#525866] text-lg">
