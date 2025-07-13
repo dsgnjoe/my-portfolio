@@ -28,7 +28,7 @@ const MyProjects = () => {
       image: citizen,
       description: "",
       tags: "Web & Responsive Design",
-      link: "https://citizen.com",
+      link: "https://www.citizen.gov.gh/",
       ongoing: false,
     },
     {
@@ -36,7 +36,7 @@ const MyProjects = () => {
       image: betta,
       description: "",
       tags: "Design System",
-      link: "https://thriftfinder.com",
+      link: "",
       ongoing: true,
     },
   ];
