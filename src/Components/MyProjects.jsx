@@ -73,12 +73,19 @@ const MyProjects = () => {
             ))}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {noCaseStudyProjects.map((project, index) => (
-                <div className="" key={index}>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={index}
+                  className=""
+                >
                   <img
                     src={project.image}
                     className="w-full h-auto mb-4 rounded-2xl max-h-[290px] object-cover"
                     alt=""
                   />
+
                   <div className="flex flex-col gap-2">
                     <div className="grow w-full flex justify-between items-center">
                       <div>
@@ -98,7 +105,7 @@ const MyProjects = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
