@@ -36,7 +36,7 @@ const MyProjects = () => {
       image: betta,
       description: "",
       tags: "Design System",
-      link: "",
+      // link: "",
       ongoing: true,
     },
   ];
