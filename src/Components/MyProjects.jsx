@@ -29,7 +29,7 @@ const MyProjects = () => {
         "Citizen is a web app that helps users find and support local businesses in their area, fostering community engagement and economic growth.",
       tagsArray: ["Community", "Web App", "Local Business"],
       tags: "Housing, Web App, UX Research",
-      link: "https://citizen.com",
+      link: "https://www.citizen.gov.gh/",
     },
     ,
     {
