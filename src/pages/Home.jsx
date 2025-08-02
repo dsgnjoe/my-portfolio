@@ -9,7 +9,7 @@ function Home() {
     <>
       <Hero />
       <MyProjects />
-      <AboutMe />
+      {/* <AboutMe /> */}
       <ExperienceSection />
     </>
   );

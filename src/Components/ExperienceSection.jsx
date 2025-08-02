@@ -5,23 +5,23 @@ const ExperienceSection = () => {
 
     const experience = [
         {
-            title: "UX/UI Designer",
-            company: "Hubtel",
+            title: "Product Designer",
+            company: "Hubtel  •  Remote",
             duration: "Mar 2024 - Present",
         },
         {
             title: "Product Designer",
-            company: "Kriblink",
+            company: "Kriblink • Remote",
             duration: "Nov 2024 - Present",
         },
         {
-            title: "UX/UI Designer (Freelance)",
-            company: "Dataware Tech",
+            title: "Product Design Consultant",
+            company: "Dataware Tech • Remote",
             duration: "Jan 2024 - Present",
         },
         {
-            title: "UX/UI Designer",
-            company: "Brolly",
+            title: "UX Designer",
+            company: "Brolly • Remote",
             duration: "Sept 2022 - Jun 2023",
         },
 

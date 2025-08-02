@@ -23,6 +23,15 @@ const MyProjects = () => {
     },
   ];
   const noCaseStudyProjects = [
+       {
+      title: "Kriblink",
+      image: kriblink,
+      description: "",
+      tagsArray: ["Housing", "Web App", "UX Research"],
+      tags: "Housing, Web App, UX Research",
+      link: "/kriblink",
+      caseStudyLink: "/kriblink",
+    },
     {
       title: "CitizenApp Website",
       image: citizen,
@@ -46,6 +55,7 @@ const MyProjects = () => {
         <div className="lg:container py-5 md:px-3 mx-auto">
           <h1 className="text-[24px] md:text-4xl mb-6">Featured Works</h1>
           <div className="grid grid-cols-1">
+            <div className="hidden">
             {/* second project */}
             {projects.map((project, index) => (
               <Link
@@ -71,18 +81,19 @@ const MyProjects = () => {
                 </div>
               </Link>
             ))}
+              
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {noCaseStudyProjects.map((project, index) => (
                 <a
                   href={project.link}
-                  target="_blank"
                   rel="noopener noreferrer"
                   key={index}
                   className=""
                 >
                   <img
                     src={project.image}
-                    className="w-full h-auto mb-4 rounded-2xl max-h-[290px] object-cover"
+                    className="w-full h-full mb-4 rounded-2xl max-h-[290px] object-cover"
                     alt=""
                   />
 
