@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
 import { RiMessage3Line } from "react-icons/ri";
-import { IoCopyOutline, IoCheckmarkOutline } from 'react-icons/io5';
+import { IoCopyOutline, IoCheckmarkOutline } from "react-icons/io5";
 
 import hubtelImg from "/images/hubtel-logo.svg";
 import dataware from "/images/dataware.svg";
@@ -9,12 +9,11 @@ import brolly from "/images/brolly.svg";
 import bitafrika from "/images/bitafrika.svg";
 import kriblinkLogo from "/images/kriblink-logo.svg";
 
-
 const Hero = () => {
   const [copied, setCopied] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const email = 'kwabenaadofo330@gmail.com';
+  const email = "kwabenaadofo330@gmail.com";
 
   const copyEmail = async (e) => {
     e.preventDefault(); // Prevent default link behavior
@@ -35,7 +34,6 @@ const Hero = () => {
       setTimeout(() => {
         setIsAnimating(false);
       }, 300);
-
     } catch (err) {
       // Fallback for older browsers
       fallbackCopyTextToClipboard(email);
@@ -55,7 +53,7 @@ const Hero = () => {
     textArea.select();
 
     try {
-      document.execCommand('copy');
+      document.execCommand("copy");
       setCopied(true);
       setIsAnimating(true);
 
@@ -67,7 +65,7 @@ const Hero = () => {
         setIsAnimating(false);
       }, 300);
     } catch (err) {
-      console.error('Failed to copy email', err);
+      console.error("Failed to copy email", err);
     }
 
     document.body.removeChild(textArea);
@@ -80,25 +78,64 @@ const Hero = () => {
           <div className="lg:container md:px-3 py-5 lg:py-[30px] lg:pb-[20px]">
             <div className="mx-auto max-w-[860px]">
               <h1 className="text-[24px] md:text-4xl mb-6 font-bold">
-                <span className="text-[#525866] font-fraunces"> I'm Joseph. </span> Product Designer
+                <span className="text-[#525866] font-fraunces">
+                  {" "}
+                  I'm Joseph.{" "}
+                </span>{" "}
+                Product Designer
               </h1>
-              <p className="text-[#525866] mb-2 text-lg font-light">
-                A product designer with 3+ years of experience designing  human-focused solutions across insurance, fintech, data analytics, B2B SaaS, and internal tools. I apply data and insight to create experiences that help people make better decisions and work more efficiently.
+              <p className="text-[#525866] mb-2 text-base font-light">
+                A product designer with 3+ years of experience designing
+                human-focused solutions across insurance, fintech, data
+                analytics, B2B SaaS, and internal tools. I apply data and
+                insight to create experiences that help people make better
+                decisions and work more efficiently.
               </p>
-              <p className="text-[#525866] mb-2 text-lg font-light">
-                Currently at Hubtel, I’m designing across internal and customer-facing tools to improve operational workflows, enhance security, and make digital transactions easier for businesses and their users.          </p>
-              <p className="text-[#525866] mb-2 text-lg font-light">I’m looking for a role where I can lead product thinking, support design strategy, and contribute to a strong, user-focused design culture. I’m excited to work with teams that value ownership, fast collaboration, and building products that truly matter.</p>
+              <p className="text-[#525866] mb-2 text-base font-light">
+                Currently at Hubtel, I’m designing across internal and
+                customer-facing tools to improve operational workflows, enhance
+                security, and make digital transactions easier for businesses
+                and their users.{" "}
+              </p>
+              <p className="text-[#525866] mb-2 text-base font-light">
+                I’m looking for a role where I can lead product thinking,
+                support design strategy, and contribute to a strong,
+                user-focused design culture. I’m excited to work with teams that
+                value ownership, fast collaboration, and building products that
+                truly matter.
+              </p>
               <div className="mt-8 lg:my-8 flex flex-col lg:flex-row gap-5 lg:items-end">
                 <div className="lg:pe-8 lg:border-r border-[#E2E4E9] order-last lg:order-first">
-                  <p className="text-gray-400 text-center lg:text-left  text-[14px] mb-2">Companies I have worked with</p>
+                  <p className="text-gray-400 text-center lg:text-left  text-[14px] mb-2">
+                    Companies I have worked with
+                  </p>
                   <div className="">
                     <div className="flex justify-center lg:justify-around items-center gap-7 flex-wrap">
-                      <img src={hubtelImg} alt="" className="w-[53px] lg:w-auto h-auto object-cover" />
-                      <img src={dataware} alt="" className="w-[53px] lg:w-auto h-auto object-cover" />
-                      <img src={bitafrika} alt="" className="w-[53px] lg:w-auto h-auto object-cover" />
-                      <img src={brolly} alt="" className="w-[53px] lg:w-auto h-auto object-cover" />
-                      <img src={kriblinkLogo} alt="" className="w-[53px] lg:w-auto h-auto object-cover" />
-
+                      <img
+                        src={hubtelImg}
+                        alt=""
+                        className="w-[53px] lg:w-auto h-auto object-cover"
+                      />
+                      <img
+                        src={dataware}
+                        alt=""
+                        className="w-[53px] lg:w-auto h-auto object-cover"
+                      />
+                      <img
+                        src={bitafrika}
+                        alt=""
+                        className="w-[53px] lg:w-auto h-auto object-cover"
+                      />
+                      <img
+                        src={brolly}
+                        alt=""
+                        className="w-[53px] lg:w-auto h-auto object-cover"
+                      />
+                      <img
+                        src={kriblinkLogo}
+                        alt=""
+                        className="w-[53px] lg:w-auto h-auto object-cover"
+                      />
                     </div>
                   </div>
                 </div>
@@ -106,15 +143,29 @@ const Hero = () => {
                   <div className="hidden lg:block">
                     <button
                       onClick={copyEmail}
-                      className={`px-5 py-3 mx-auto transition-all bg-[#C2540A] hover:bg-[#904d20] text-white rounded-xl flex items-center gap-2 w-fit relative overflow-hidden ${isAnimating ? 'animate-pulse' : ''}`}
+                      className={`px-5 py-3 mx-auto transition-all bg-[#C2540A] hover:bg-[#904d20] text-white rounded-xl flex items-center gap-2 w-fit relative overflow-hidden ${
+                        isAnimating ? "animate-pulse" : ""
+                      }`}
                     >
                       <IoCopyOutline className="text-white" />
-                      <span className={`transition-opacity duration-300 ${copied ? 'opacity-0' : 'opacity-100'}`}>
+                      <span
+                        className={`transition-opacity duration-300 ${
+                          copied ? "opacity-0" : "opacity-100"
+                        }`}
+                      >
                         Copy my email
                       </span>
 
-                      <div className={`absolute inset-0 bg-green-600 flex items-center justify-center gap-2 text-white transform transition-transform duration-300 ${copied ? 'translate-y-0' : 'translate-y-full'}`}>
-                        <IoCheckmarkOutline className={`text-white ${copied ? 'animate-bounce' : ''}`} />
+                      <div
+                        className={`absolute inset-0 bg-green-600 flex items-center justify-center gap-2 text-white transform transition-transform duration-300 ${
+                          copied ? "translate-y-0" : "translate-y-full"
+                        }`}
+                      >
+                        <IoCheckmarkOutline
+                          className={`text-white ${
+                            copied ? "animate-bounce" : ""
+                          }`}
+                        />
                         Copied!
                       </div>
                     </button>
@@ -132,7 +183,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   );
