@@ -84,20 +84,20 @@ const Hero = () => {
                 </span>{" "}
                 Product Designer
               </h1>
-              <p className="text-[#525866] mb-2 text-base font-light">
+              <p className="text-[#525866] mb-2 text-lg font-light">
                 A product designer with 3+ years of experience designing
                 human-focused solutions across insurance, fintech, data
                 analytics, B2B SaaS, and internal tools. I apply data and
                 insight to create experiences that help people make better
                 decisions and work more efficiently.
               </p>
-              <p className="text-[#525866] mb-2 text-base font-light">
+              <p className="text-[#525866] mb-2 text-lg font-light">
                 Currently at Hubtel, I’m designing across internal and
                 customer-facing tools to improve operational workflows, enhance
                 security, and make digital transactions easier for businesses
                 and their users.{" "}
               </p>
-              <p className="text-[#525866] mb-2 text-base font-light">
+              <p className="text-[#525866] mb-2 text-lg font-light">
                 I’m looking for a role where I can lead product thinking,
                 support design strategy, and contribute to a strong,
                 user-focused design culture. I’m excited to work with teams that
