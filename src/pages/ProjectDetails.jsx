@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router";
 import Kriblink from "./Kriblink";
 import ThriftFinder from "./ThriftFinder";
+import Sendi from "./Sendi";
 
 function ProjectDetails() {
   const { id } = useParams();
@@ -12,6 +13,8 @@ function ProjectDetails() {
   switch (id) {
     case "kriblink":
       return <Kriblink />;
+    case "sendi":
+      return <Sendi />;
     // break;
     case "thrift-finder":
       return <ThriftFinder />;

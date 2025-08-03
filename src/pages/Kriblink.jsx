@@ -186,12 +186,12 @@ function Kriblink() {
         <div className="lg:container py-5 md:px-3 mx-auto">
           <a
             href="/"
-            className="text-sm mb-3 text-center flex items-center justify-center gap-1"
+            className="text-sm mb-10 flex items-center justify-start gap-1"
           >
             <MdKeyboardArrowLeft />
             <span>Return to home</span>
           </a>
-          <h1 className="text-[28px] md:text-[40px] mb-8 leading-snug text-center">
+          <h1 className="text-[28px] md:text-[40px] mb-8 leading-snug">
             Rethinking off-campus housing for 15,000+ non-{" "}
             <br className="hidden lg:block" />
             resident students with verified listings, smart filters, and{" "}
@@ -207,17 +207,17 @@ function Kriblink() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {details.map((detail, index) => (
               <div key={index}>
-                <h6 className="text-[#868C98] text-sm md:text-base">
+                <h6 className="text-[#868C98] text-sm md:text-base lg:w-5/6">
                   {detail.label}
                 </h6>
-                <h5 className="text-[#525866] text-base md:text-lg">
+                <h5 className="text-[#525866] text-base md:text-lg lg:w-5/6">
                   {detail.value}
                 </h5>
               </div>
             ))}
           </div>
 
-          <div className="mb-10">
+          <div className="mb-10 lg:w-5/6">
             <h1 className="text-[24px] md:text-3xl mb-5">Background</h1>
             <p className="text-[#525866] text-lg">
               Kriblink is a digital platform built to simplify off-campus
@@ -228,7 +228,7 @@ function Kriblink() {
               secure accommodation outside of campus.
             </p>
           </div>
-          <div className="">
+          <div className="lg:w-5/6">
             <h1 className="text-[24px] md:text-3xl mb-5">Core Problem</h1>
             <p className="text-[#525866] text-lg">
               Finding off-campus housing is a major challenge for almost 73% of
@@ -248,7 +248,7 @@ function Kriblink() {
             <h1 className="text-[24px] md:text-3xl mb-5">
               The Approach for Kriblink
             </h1>
-            <p className="text-[#525866] text-lg">
+            <p className="text-[#525866] text-lg lg:w-5/6">
               Our goal was to create a trustworthy and efficient platform where
               students can find and book verified accommodations with ease. We
               started with user interviews and focus groups to understand the
@@ -256,7 +256,7 @@ function Kriblink() {
               wanted:
             </p>
 
-            <ul className="list-disc pl-5 mt-4 text-[#525866] text-lg">
+            <ul className="list-disc pl-5 mt-4 text-[#525866] text-lg lg:w-5/6">
               <li>A platform that priorities safety and transparency.</li>
               <li>Clear property details and accurate pricing.</li>
               <li>A seamless booking process with minimal steps.</li>
@@ -264,7 +264,7 @@ function Kriblink() {
           </div>
           <div className="mb-10">
             <h1 className="text-[24px] md:text-3xl mb-5">Steps We Took</h1>
-            <ul className="list-disc pl-5 mt-4 text-[#525866] text-lg">
+            <ul className="list-disc pl-5 mt-4 text-[#525866] text-lg lg:w-5/6">
               <li>
                 We mapped out a user’s journey, from discovering the platform to
                 making a booking to identify where we could remove friction.{" "}
@@ -286,14 +286,14 @@ function Kriblink() {
 
             {features.map((feature, i) => (
               <div key={i} className="pb-12 last:pb-0">
-                <p className="text-[#525866] text-lg mb-5">{feature.caption}</p>
+                <p className="text-[#525866] text-lg mb-5 lg:w-5/6">{feature.caption}</p>
                 {feature.images}
               </div>
             ))}
           </div>
           <div className="mb-10">
             <h1 className="text-[24px] md:text-3xl mb-5">Results & Impact</h1>
-            <ul className="list-disc pl-5 mt-4 text-[#525866] text-lg">
+            <ul className="list-disc pl-5 mt-4 text-[#525866] text-lg lg:w-5/6">
               <li>
                 Over 300 students joined the waitlist in less than a month
                 before launch.
