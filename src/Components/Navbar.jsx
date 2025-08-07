@@ -112,18 +112,16 @@ const Navbar = () => {
                   </a>
                 </li>
 
-                <li className="w-full">
-                  <a
-                    href="mailto:kwabenaadofo330@gmail.com"
-                    target="_blank"
-                    className="text-white bg-black rounded-lg  px-3.5 py-3.5 w-full  text-[14px] hidden"
-                  >
-                    Get In Touch
-                  </a>
-                  <button className="text-white bg-black rounded-lg  px-3.5 py-3.5 w-full  text-[14px]">
-                    Get In Touch
-                  </button>
-                </li>
+            <li>
+                <a
+                  href="https://x.com/onlyjoex"
+                  target="_blank"
+                  className="text-[#525866] hover:text-gray-600 text-base flex items-center gap-2"
+                >
+                  {/* <FaLinkedin /> */}
+                  X (Twitter)
+                </a>
+              </li>
               </ul>
             </div>
           )}
