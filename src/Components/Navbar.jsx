@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="bg-white p-4 md:p-5 w-full border-b border-gray-100">
-        <div className="">
+        <div className="md:px-3">
           <div className="flex justify-between items-center">
             <a href="/" className="">
               <img src={logo} alt="" className="w-10 h-10 rounded-full" />
