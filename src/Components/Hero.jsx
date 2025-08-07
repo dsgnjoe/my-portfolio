@@ -76,7 +76,7 @@ const Hero = () => {
         <Navbar />
         <div className="p-4 md:p-5">
           <div className="lg:container md:px-3 py-5 lg:py-[30px] lg:pb-[20px]">
-            <div className="mx-auto max-w-[860px]">
+            <div className="">
               <h1 className="text-[24px] md:text-4xl mb-6 font-bold">
                 <span className="text-[#525866] font-fraunces">
                   {" "}

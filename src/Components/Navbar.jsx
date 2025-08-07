@@ -9,7 +9,7 @@ import {
   FaFileAlt,
 } from "react-icons/fa";
 
-import logo from "/images/logo.svg";
+import logo from "/images/joe-img.png";
 import Container from "./Container";
 
 const Navbar = () => {
@@ -37,10 +37,10 @@ const Navbar = () => {
   return (
     <div>
       <nav className="bg-white p-4 md:p-5 w-full border-b border-gray-100">
-        <div className="mx-auto max-w-[860px]">
+        <div className="">
           <div className="flex justify-between items-center">
-            <a href="/" className="text-white text-lg md:text-2xl font-bold">
-              <img src={logo} alt="" />
+            <a href="/" className="">
+              <img src={logo} alt="" className="w-10 h-10 rounded-full" />
             </a>
             <div className="block lg:hidden">
               <button
@@ -71,16 +71,18 @@ const Navbar = () => {
                   LinkedIn
                 </a>
               </li>
-
               <li>
                 <a
-                  href="mailto:kwabenaadofo330@gmail.com"
+                  href="https://x.com/onlyjoex"
                   target="_blank"
-                  className="text-white bg-black rounded-lg  px-3.5 py-2.5  text-[14px]"
+                  className="text-black hover:text-gray-600 text-base flex items-center gap-2"
                 >
-                  Get In Touch
+                  {/* <FaLinkedin /> */}
+                  X (Twitter)
                 </a>
               </li>
+
+           
             </ul>
           </div>
           {/* Mobile Nav */}
