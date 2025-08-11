@@ -87,9 +87,7 @@ const Hero = () => {
               <p className="text-[#525866] mb-2 text-lg font-light">
                 A product designer with 3+ years of experience designing
                 human-focused solutions across insurance, fintech, data
-                analytics, B2B SaaS, and internal tools. I apply data and
-                insight to create experiences that help people make better
-                decisions and work more efficiently.
+                analytics, B2B SaaS, and internal tools.
               </p>
               <p className="text-[#525866] mb-2 text-lg font-light">
                 Currently at Hubtel, I’m designing across internal and
