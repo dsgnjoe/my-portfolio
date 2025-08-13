@@ -17,6 +17,7 @@ const MyProjects = () => {
       tags: "Housing, Web App, UX Research",
       link: "/kriblink",
       caseStudyLink: "/kriblink",
+       openNewTab: false
     },
     {
       title: "Sendi",
@@ -27,13 +28,15 @@ const MyProjects = () => {
       tagsArray: ["Design System"],
       link: "/sendi",
       caseStudyLink: "/sendi",
+       openNewTab: false
     },
     {
       title: "Betta UI",
       image: betta,
       description: "Betta UI Design System",
       tags: "Design System",
-      // link: "",
+      link: "betta-ui",
+      openNewTab: false
     },
     {
       title: "CitizenApp Website",
@@ -42,6 +45,7 @@ const MyProjects = () => {
       tags: "Web & Responsive Design",
       link: "https://www.citizen.gov.gh/",
       ongoing: false,
+      openNewTab: true
     },
   ];
   return (
@@ -55,7 +59,7 @@ const MyProjects = () => {
             {projects.map((project, index) => (
               <Link
                 to={project.link}
-                target="_blank"
+                {...(project.openNewTab && {target: "_blank"} )}
                 rel="noopener noreferrer"
                 key={index}
                 className="group"
@@ -69,7 +73,7 @@ const MyProjects = () => {
                 <div className="flex flex-col gap-2">
                   <div className="grow w-full flex justify-between items-center">
                     <div>
-                      <h1 className="text-lg font-normal text-[#0A0D14]">
+                      <h1 className="text-base lg:text-lg  font-normal text-[#0A0D14] font-montreal">
                         {project.description}
                       </h1>
                       {/* <p className="text-orange-600">{project.tags}</p> */}

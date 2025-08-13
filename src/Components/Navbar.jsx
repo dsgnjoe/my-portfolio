@@ -96,7 +96,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="https://www.linkedin.com/in/josephadofo/"
-                    className="text-[#525866] text-lg md:text-2xl hover:text-gray-400"
+                    className="text-[#525866] text-base lg:text-lg  md:text-2xl hover:text-gray-400"
                     onClick={toggleSidebar}
                   >
                     Resume
@@ -105,7 +105,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="https://www.linkedin.com/in/josephadofo/"
-                    className="text-[#525866] text-lg md:text-2xl hover:text-gray-400"
+                    className="text-[#525866] text-base lg:text-lg  md:text-2xl hover:text-gray-400"
                     onClick={toggleSidebar}
                   >
                     LinkedIn

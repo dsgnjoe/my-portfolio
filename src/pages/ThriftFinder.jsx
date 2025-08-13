@@ -183,7 +183,7 @@ function ThriftFinder() {
           </p>
         </div>
         <div>
-          <h4 className="text-lg md:text-xl font-medium mb-1">
+          <h4 className="text-base lg:text-lg  md:text-xl font-medium mb-1">
             Onboarding Screens
           </h4>
           <p className="text-sm md:text-base text-gray-700">
@@ -195,7 +195,7 @@ function ThriftFinder() {
           </div>
         </div>
         <div>
-          <h4 className="text-lg md:text-xl font-medium mb-1">
+          <h4 className="text-base lg:text-lg  md:text-xl font-medium mb-1">
             Viewing a shop
           </h4>
           <p className="text-sm md:text-base text-gray-700">
@@ -207,7 +207,7 @@ function ThriftFinder() {
           </div>
         </div>
         <div>
-          <h4 className="text-lg md:text-xl font-medium mb-1">Adding a shop</h4>
+          <h4 className="text-base lg:text-lg  md:text-xl font-medium mb-1">Adding a shop</h4>
           <p className="text-sm md:text-base text-gray-700 ">
             Users only need to enter the shop name and username of a shop they
             are familiar with to add it, and they can choose categories based on
@@ -218,7 +218,7 @@ function ThriftFinder() {
           </div>
         </div>
         <div className="mb-8">
-          <h4 className="text-lg md:text-xl font-medium mb-1">
+          <h4 className="text-base lg:text-lg  md:text-xl font-medium mb-1">
             Reviewing a Shop
           </h4>
           <p className="text-sm md:text-base text-gray-700">
@@ -230,7 +230,7 @@ function ThriftFinder() {
           </div>
         </div>
         <div>
-          <h4 className="text-lg md:text-[24px] font-medium mb-1">
+          <h4 className="text-base lg:text-lg  md:text-[24px] font-medium mb-1">
             Expected Results
           </h4>
           <p className="text-sm md:text-base text-gray-700 ">

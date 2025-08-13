@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import Kriblink from "./Kriblink";
 import ThriftFinder from "./ThriftFinder";
 import Sendi from "./Sendi";
+import BettaUI from "./BettaUI";
 
 function ProjectDetails() {
   const { id } = useParams();
@@ -15,6 +16,9 @@ function ProjectDetails() {
       return <Kriblink />;
     case "sendi":
       return <Sendi />;
+    // break;
+    case "betta-ui":
+      return <BettaUI />;
     // break;
     case "thrift-finder":
       return <ThriftFinder />;

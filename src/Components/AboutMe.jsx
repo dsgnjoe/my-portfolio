@@ -13,7 +13,7 @@ const AboutMe = () => {
 					<h1 className="text-[24px] md:text-4xl mb-6">
 						Designer <span className="text-[#525866] font-fraunces">&</span> Thinker
 					</h1>
-							<p className="text-[#525866] mb-2 text-lg">
+							<p className="text-[#525866] mb-2 text-base lg:text-lg ">
 								I'm a UX designer with over 3 years of experience creating
 								user-focused solutions across industries like insurance,
 								internal tools, and e-commerce. My work focuses on making
@@ -21,14 +21,14 @@ const AboutMe = () => {
 								core of what I do is the belief that great design should make
 								life easier.
 							</p>
-							<p className="text-[#525866] mb-2 text-lg">
+							<p className="text-[#525866] mb-2 text-base lg:text-lg ">
 								My approach to design is grounded in clarity, empathy, and
 								purpose. I strive to balance user needs with business goals,
 								ensuring that every design decision adds value. I enjoy
 								collaborating closely with cross-functional teams to bring ideas
 								to life in ways that are both functional and impactful.
 							</p>
-                            <p className="text-[#525866] text-lg">
+                            <p className="text-[#525866] text-base lg:text-lg ">
                                 When I’m not in design mode, you’ll likely find me at the gym, on
                                 the basketball court, or enjoying a quiet moment by the beach. It’s
                                 how I recharge and find inspiration beyond the screen.
