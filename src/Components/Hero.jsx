@@ -72,7 +72,7 @@ const Hero = () => {
   };
   return (
     <div className="mb-8 md:mb-0">
-      <div className="mx-auto max-w-[1100px] bg-white mt-6 rounded-3xl relative overflow-hidden">
+      <div className="mx-auto max-w-[956px] bg-white mt-6 rounded-3xl relative overflow-hidden">
         <Navbar />
         <div className="p-4 md:p-5">
           <div className="lg:container md:px-3 py-5 lg:py-[30px] lg:pb-[20px]">
@@ -84,18 +84,18 @@ const Hero = () => {
                 </span>{" "}
                 Product Designer
               </h1>
-              <p className="text-[#525866] mb-2 text-lg font-light">
+              <p className="text-[#525866] mb-2 text-base lg:text-lg  font-light">
                 A product designer with 3+ years of experience designing
                 human-focused solutions across insurance, fintech, data
                 analytics, B2B SaaS, and internal tools.
               </p>
-              <p className="text-[#525866] mb-2 text-lg font-light">
+              <p className="text-[#525866] mb-2 text-base lg:text-lg  font-light">
                 Currently at Hubtel, I’m designing across internal and
                 customer-facing tools to improve operational workflows, enhance
                 security, and make digital transactions easier for businesses
                 and their users.{" "}
               </p>
-              <p className="text-[#525866] mb-2 text-lg font-light">
+              <p className="text-[#525866] mb-2 text-base lg:text-lg  font-light">
                 I’m looking for a role where I can lead product thinking,
                 support design strategy, and contribute to a strong,
                 user-focused design culture. I’m excited to work with teams that

@@ -10,7 +10,7 @@ import { LuLinkedin } from "react-icons/lu";
 const Footer = () => {
   return (
     <div>
-      <footer className="mx-auto max-w-[1100px] p-4 md:p-5 bg-[#2B1664] text-white my-6 rounded-3xl relative overflow-hidden">
+      <footer className="mx-auto max-w-[956px] p-4 md:p-5 bg-[#2B1664] text-white my-6 rounded-3xl relative overflow-hidden">
         <img
           src={footerBgPattern}
           alt=""
