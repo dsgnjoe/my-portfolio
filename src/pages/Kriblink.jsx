@@ -5,8 +5,7 @@ import KriblinkCoverImage from "/images/kriblink/kriblink-cover.svg";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { div } from "motion/react-client";
 import { Link } from "react-router";
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 
 function Kriblink() {
   const details = [
@@ -15,16 +14,12 @@ function Kriblink() {
     { label: "Project Duration", value: "8 Weeks" },
   ];
 
+  const navigate = useNavigate();
 
-
-    const navigate = useNavigate();
-
-    // Navigate and replace current route
-    const handleNavigation = (path) => {
-        navigate(`/${path}`, { replace: true });      
-          
-    };
-
+  // Navigate and replace current route
+  const handleNavigation = (path) => {
+    navigate(`/${path}`, { replace: true });
+  };
 
   const caseStudyParagraphs = [
     {
@@ -56,17 +51,16 @@ function Kriblink() {
       description: (
         <>
           To better understand the problem, I led user interviews with 10
-          students and facilitated focus group sessions with 12 more. What we
+          students and facilitated focus group sessions with 12 more. What I
           discovered was eye-opening: 80% feared getting scammed, 70% struggled
           to balance housing searches with academic life, and 65% felt
           overwhelmed by unclear booking processes. Many shared stories of
           missed opportunities and frustration. Students wanted safety,
           transparency, and ease — something current platforms weren’t
-          delivering. <br /> <br />
-          We also studied similar platforms to benchmark features. While they
-          had robust search systems and high-quality visuals, they lacked
-          student-friendly pricing and lease terms. These insights helped define
-          the core features we needed to build.
+          delivering. <br /> <br />I also studied similar platforms to benchmark
+          features. While they had robust search systems and high-quality
+          visuals, they lacked student-friendly pricing and lease terms. These
+          insights helped define the core features I needed to design.
         </>
       ),
     },
@@ -206,8 +200,7 @@ function Kriblink() {
             <span>Return to home</span>
           </a>
           <h1 className="text-[28px] md:text-[40px] mb-8 leading-snug">
-            Rethinking off-campus housing for 15,000+ non-
-            resident students 
+            Rethinking off-campus housing for 15,000+ non- resident students
           </h1>
 
           <img
@@ -241,7 +234,9 @@ function Kriblink() {
             </p>
           </div>
           <div className="">
-            <h1 className="text-[24px] md:text-3xl mb-4 lg:mb-5">Core Problem</h1>
+            <h1 className="text-[24px] md:text-3xl mb-4 lg:mb-5">
+              Core Problem
+            </h1>
             <p className="text-[#525866] text-base lg:text-lg ">
               Finding off-campus housing is a major challenge for almost 73% of
               students. Many rely on word of mouth, unverified social media
@@ -262,9 +257,9 @@ function Kriblink() {
             </h1>
             <p className="text-[#525866] text-base lg:text-lg  ">
               Our goal was to create a trustworthy and efficient platform where
-              students can find and book verified accommodations with ease. We
+              students can find and book verified accommodations with ease. I
               started with user interviews and focus groups to understand the
-              real pain points. Speaking to students, we learned that students
+              real pain points. Speaking to students, I learned that students
               wanted:
             </p>
 
@@ -275,10 +270,12 @@ function Kriblink() {
             </ul>
           </div>
           <div className="mb-10">
-            <h1 className="text-[24px] md:text-3xl mb-4 lg:mb-5">Steps We Took</h1>
+            <h1 className="text-[24px] md:text-3xl mb-4 lg:mb-5">
+              Steps We Took
+            </h1>
             <ul className="list-disc pl-5 mt-4 text-[#525866] text-base lg:text-lg  ">
               <li>
-                We mapped out a user’s journey, from discovering the platform to
+                I mapped out a user’s journey, from discovering the platform to
                 making a booking to identify where we could remove friction.{" "}
               </li>
               <li>
@@ -287,24 +284,30 @@ function Kriblink() {
                 emphasised simplicity, trust, and ease of use.
               </li>
               <li>
-                We tested with 6 students and iterated based on the feedback. It
+                I tested with 6 students and iterated based on the feedback. It
                 helped make our sign up process less overwhelming, reduce
                 cluster on our filters.
               </li>
             </ul>
           </div>
           <div className="mb-10">
-            <h1 className="text-[24px] md:text-3xl mb-4 lg:mb-5">Final Designs</h1>
+            <h1 className="text-[24px] md:text-3xl mb-4 lg:mb-5">
+              Final Designs
+            </h1>
 
             {features.map((feature, i) => (
               <div key={i} className="pb-12 last:pb-0">
-                <p className="text-[#525866] text-base lg:text-lg  mb-5 ">{feature.caption}</p>
+                <p className="text-[#525866] text-base lg:text-lg  mb-5 ">
+                  {feature.caption}
+                </p>
                 {feature.images}
               </div>
             ))}
           </div>
           <div className="mb-10">
-            <h1 className="text-[24px] md:text-3xl mb-4 lg:mb-5">Results & Impact</h1>
+            <h1 className="text-[24px] md:text-3xl mb-4 lg:mb-5">
+              Results & Impact
+            </h1>
             <ul className="list-disc pl-5 mt-4 text-[#525866] text-base lg:text-lg  ">
               <li>
                 Over 300 students joined the waitlist in less than a month
@@ -316,7 +319,9 @@ function Kriblink() {
           </div>
           <div className="flex items-center justify-center gap-2">
             <button
-            onClick={() => handleNavigation('sendi')} className="text-white bg-black rounded-xl flex items-center justify-center gap-2  px-3.5 py-3.5  text-[14px]">
+              onClick={() => handleNavigation("sendi")}
+              className="text-white bg-black rounded-xl flex items-center justify-center gap-2  px-3.5 py-3.5  text-[14px]"
+            >
               View Next Case Study
               <MdKeyboardArrowRight className="text-xl" />
             </button>
