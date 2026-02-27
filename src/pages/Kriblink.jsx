@@ -1,9 +1,11 @@
 import React from "react";
 import Container from "../Components/Container";
 import { MdArrowOutward } from "react-icons/md";
-import KriblinkCoverImage from "/images/kriblink/kriblink-cover.png";
+import KriblinkCoverImage from "/images/kriblink/kriblink-cover.svg";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { div } from "motion/react-client";
+import { Link } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 function Kriblink() {
   const details = [
@@ -12,113 +14,12 @@ function Kriblink() {
     { label: "Project Duration", value: "8 Weeks" },
   ];
 
-  const caseStudyParagraphs = [
-    {
-      title:
-        "Why finding off-campus housing is a recurring nightmare for thousands of students",
-      description: (
-        <>
-          University enrolment continues to grow, but on-campus housing has not
-          kept pace. The opportunity became clearer when we looked into the
-          numbers: in 2024 alone, over 16,000 freshers enrolled, but only 9.67%
-          could be housed on campus. This meant that over 90% were forced to
-          seek alternative housing, usually under pressure and without trusted
-          platforms. Despite this recurring problem, existing platforms weren’t
-          tailored to student-specific needs like verified listings, or easy and
-          secure booking. <br />
-          <br />
-          This makes Kriblink even more relevant as a solution for this
-          expanding group. With the rise in non-resident students, there’s a
-          clear need for a scalable platform offering safe, trustworthy, and
-          easy-to-use off-campus housing. Since many students are new to the
-          housing process, prioritizing trust, clarity, and simplicity is
-          essential to support their transition.
-        </>
-      ),
-    },
-    {
-      title:
-        "Uncovering real student pain points through interviews, focus groups, and market data",
-      description: (
-        <>
-          To better understand the problem, I led user interviews with 10
-          students and facilitated focus group sessions with 12 more. What we
-          discovered was eye-opening: 80% feared getting scammed, 70% struggled
-          to balance housing searches with academic life, and 65% felt
-          overwhelmed by unclear booking processes. Many shared stories of
-          missed opportunities and frustration. Students wanted safety,
-          transparency, and ease — something current platforms weren’t
-          delivering. <br /> <br />
-          We also studied similar platforms to benchmark features. While they
-          had robust search systems and high-quality visuals, they lacked
-          student-friendly pricing and lease terms. These insights helped define
-          the core features we needed to build.
-        </>
-      ),
-    },
-    {
-      title:
-        "Bringing it all together: a feature set built around trust, simplicity, and speed",
-      description: (
-        <>
-          Our target users included Daniel, a first-year student new to the
-          system, and Ama, a returning student frustrated by previous poor
-          experiences. Both were looking for a better way to find housing
-          without the stress and uncertainty.
-          <br />
-          <br />I mapped out Daniel’s journey — from discovering the platform to
-          making a booking — to identify where we could remove friction. From
-          this, we designed a platform experience that focused on verified
-          listings, smart filters, and a seamless, three-step booking process.
-          <br />
-          <br />
-          Starting with low-fidelity wireframes, I explored layout and user
-          flows. These evolved into a high-fidelity prototype that emphasised
-          simplicity, trust, and ease of use. We tested it with five students,
-          and the feedback was very encouraging: “The booking process was so
-          easy to follow,” one said. Others praised the filters and visual
-          clarity. Based on their input, we refined filter placement, clarified
-          the payment flow which we employed a third party payment platform, and
-          simplified confirmation steps.
-        </>
-      ),
-    },
-    {
-      title:
-        "What happened after launch — wins, lessons, and where we missed the mark",
-      description: (
-        <>
-          Although the idea of the product attracted over 300 students to our
-          waitlist within a month, a key insight emerged post-launch. The
-          platform didn’t gain traction as expected. Why? Because we’d
-          overlooked the supply side. The true primary users weren’t just the
-          students — they were the property owners, and we hadn’t built for
-          them. To drive value for students, we needed to build relationships
-          with enough landlords to list their spaces. Without them, we couldn’t
-          offer variety or availability.
-          <br />
-          <br />
-          This was a tough but valuable realisation. It highlighted the
-          importance of defining the right core user — not just the one with the
-          most visible pain, but the one who drives the ecosystem.
-        </>
-      ),
-    },
-    {
-      title:
-        "Shifting focus to property owners and building a truly two-sided platform",
-      description: (
-        <>
-          Moving forward, we aimed to equip property owners with tools to list
-          and manage rooms, creating a fully connected platform for both
-          landlords and students. Kriblink reinforced a key lesson for me: great
-          UX only succeeds when it’s built on the right product strategy. True
-          impact comes from designing with the bigger picture in mind, not just
-          the interface.
-        </>
-      ),
-    },
-  ];
+  const navigate = useNavigate();
+
+  // Navigate and replace current route
+  const handleNavigation = (path) => {
+    navigate(`/${path}`, { replace: true });
+  };
 
   const features = [
     {
@@ -191,11 +92,8 @@ function Kriblink() {
             <MdKeyboardArrowLeft />
             <span>Return to home</span>
           </a>
-          <h1 className="text-[28px] md:text-[40px] mb-8 leading-snug">
-            Rethinking off-campus housing for 15,000+ non-{" "}
-            <br className="hidden lg:block" />
-            resident students with verified listings, smart filters, and{" "}
-            <br className="hidden lg:block" /> seamless booking
+          <h1 className="text-[28px] md:text-3xl mb-8 leading-snug">
+            Rethinking off-campus housing for 15,000+ non- resident students
           </h1>
 
           <img
@@ -207,19 +105,19 @@ function Kriblink() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {details.map((detail, index) => (
               <div key={index}>
-                <h6 className="text-[#868C98] text-sm md:text-base lg:w-5/6">
+                <h6 className="text-[#868C98] text-sm md:text-base ">
                   {detail.label}
                 </h6>
-                <h5 className="text-[#525866] text-base md:text-lg lg:w-5/6">
+                <h5 className="text-[#525866] text-base md:text-base lg:text-lg  ">
                   {detail.value}
                 </h5>
               </div>
             ))}
           </div>
 
-          <div className="mb-10 lg:w-5/6">
-            <h1 className="text-[24px] md:text-3xl mb-5">Background</h1>
-            <p className="text-[#525866] text-lg">
+          <div className="mb-10 ">
+            <h1 className="text-xl md:text-2xl mb-4 lg:mb-5">Background</h1>
+            <p className="text-[#525866] text-base lg:text-lg ">
               Kriblink is a digital platform built to simplify off-campus
               housing for students by providing access to verified listings,
               smart search tools, and a frictionless booking experience. The
@@ -228,9 +126,9 @@ function Kriblink() {
               secure accommodation outside of campus.
             </p>
           </div>
-          <div className="lg:w-5/6">
-            <h1 className="text-[24px] md:text-3xl mb-5">Core Problem</h1>
-            <p className="text-[#525866] text-lg">
+          <div className="">
+            <h1 className="text-xl md:text-2xl mb-4 lg:mb-5">Core Problem</h1>
+            <p className="text-[#525866] text-base lg:text-lg ">
               Finding off-campus housing is a major challenge for almost 73% of
               students. Many rely on word of mouth, unverified social media
               listings, or unreliable agents leading to wasted time, mistrust,
@@ -245,28 +143,28 @@ function Kriblink() {
       <Container className="mb-5">
         <div className="lg:container py-5 md:px-3 mx-auto">
           <div className="mb-10">
-            <h1 className="text-[24px] md:text-3xl mb-5">
-              The Approach for Kriblink
+            <h1 className="text-xl md:text-2xl mb-4 lg:mb-5">
+              My Approach for Kriblink
             </h1>
-            <p className="text-[#525866] text-lg lg:w-5/6">
-              Our goal was to create a trustworthy and efficient platform where
-              students can find and book verified accommodations with ease. We
+            <p className="text-[#525866] text-base lg:text-lg  ">
+              The goal was to create a trustworthy and efficient platform where
+              students can find and book verified accommodations with ease. I
               started with user interviews and focus groups to understand the
-              real pain points. Speaking to students, we learned that students
+              real pain points. Speaking to students, I learned that students
               wanted:
             </p>
 
-            <ul className="list-disc pl-5 mt-4 text-[#525866] text-lg lg:w-5/6">
+            <ul className="list-disc pl-5 mt-4 text-[#525866] text-base lg:text-lg  ">
               <li>A platform that priorities safety and transparency.</li>
               <li>Clear property details and accurate pricing.</li>
               <li>A seamless booking process with minimal steps.</li>
             </ul>
           </div>
           <div className="mb-10">
-            <h1 className="text-[24px] md:text-3xl mb-5">Steps We Took</h1>
-            <ul className="list-disc pl-5 mt-4 text-[#525866] text-lg lg:w-5/6">
+            <h1 className="text-xl md:text-2xl mb-4 lg:mb-5">Steps I Took</h1>
+            <ul className="list-disc pl-5 mt-4 text-[#525866] text-base lg:text-lg  ">
               <li>
-                We mapped out a user’s journey, from discovering the platform to
+                I mapped out a user’s journey, from discovering the platform to
                 making a booking to identify where we could remove friction.{" "}
               </li>
               <li>
@@ -275,25 +173,29 @@ function Kriblink() {
                 emphasised simplicity, trust, and ease of use.
               </li>
               <li>
-                We tested with 6 students and iterated based on the feedback. It
+                I tested with 6 students and iterated based on the feedback. It
                 helped make our sign up process less overwhelming, reduce
                 cluster on our filters.
               </li>
             </ul>
           </div>
           <div className="mb-10">
-            <h1 className="text-[24px] md:text-3xl mb-5">Final Designs</h1>
+            <h1 className="text-xl md:text-2xl mb-4 lg:mb-5">Final Designs</h1>
 
             {features.map((feature, i) => (
               <div key={i} className="pb-12 last:pb-0">
-                <p className="text-[#525866] text-lg mb-5 lg:w-5/6">{feature.caption}</p>
+                <p className="text-[#525866] text-base lg:text-lg  mb-5 ">
+                  {feature.caption}
+                </p>
                 {feature.images}
               </div>
             ))}
           </div>
           <div className="mb-10">
-            <h1 className="text-[24px] md:text-3xl mb-5">Results & Impact</h1>
-            <ul className="list-disc pl-5 mt-4 text-[#525866] text-lg lg:w-5/6">
+            <h1 className="text-xl md:text-xl mb-4 lg:mb-5">
+              Results & Impact
+            </h1>
+            <ul className="list-disc pl-5 mt-4 text-[#525866] text-base lg:text-lg  ">
               <li>
                 Over 300 students joined the waitlist in less than a month
                 before launch.
@@ -303,7 +205,10 @@ function Kriblink() {
             </ul>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <button className="text-white bg-black rounded-xl flex items-center justify-center gap-2  px-3.5 py-3.5  text-[14px]">
+            <button
+              onClick={() => handleNavigation("sendi")}
+              className="text-white bg-black rounded-xl flex items-center justify-center gap-2  px-3.5 py-3.5  text-[14px]"
+            >
               View Next Case Study
               <MdKeyboardArrowRight className="text-xl" />
             </button>

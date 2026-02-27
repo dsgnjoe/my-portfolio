@@ -29,16 +29,16 @@ html {
 
 h1, .font-fraunces {
     font-family: "Fraunces", serif;
-
 }
 
-p, a,li {
+p, a,li, .font-montreal {
   font-family: "NeueMontreal", serif;
 }
 
 button {
   font-family: "NeueMontreal", serif;
 }
+
 
 .text-dark {
   @apply text-[#0A0D14];

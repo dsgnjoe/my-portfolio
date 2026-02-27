@@ -37,7 +37,7 @@ const About = () => {
               <div>
                 <div className="flex justify-between px-4 md:px-6 border-b  pb-4 md:pb-6">
                   <div>
-                    <p className="text-lg md:text-[24px] text-gray-800 font-semibold">
+                    <p className="text-base lg:text-lg  md:text-[24px] text-gray-800 font-semibold">
                       UX Designer
                     </p>
                     <p className="text-gray-500 text-sm  md:text-base">
@@ -52,7 +52,7 @@ const About = () => {
               <div>
                 <div className="flex justify-between px-4 md:px-6 border-b p-4 md:p-6">
                   <div>
-                    <p className="text-lg md:text-[24px] text-gray-800 font-semibold">
+                    <p className="text-base lg:text-lg  md:text-[24px] text-gray-800 font-semibold">
                       UX/UI Designer
                     </p>
                     <p className="text-gray-500 text-sm md:text-base">
@@ -65,7 +65,7 @@ const About = () => {
                 </div>
                 <div className="flex justify-between px-4 md:px-6 pt-4 md:pt-6">
                   <div>
-                    <p className="text-lg md:text-[24px] text-gray-800 font-semibold">
+                    <p className="text-base lg:text-lg  md:text-[24px] text-gray-800 font-semibold">
                       UX Designer
                     </p>
                     <p className="text-gray-500 text-sm md:text-base">Brolly</p>
