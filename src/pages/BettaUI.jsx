@@ -6,7 +6,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { div } from "motion/react-client";
 import { Link } from "react-router";
 
-function Sendi() {
+function BettaUI() {
   const details = [
     { label: "Role", value: "Product Designer" },
     { label: "Tools", value: "Figma, Notion" },
@@ -93,5 +93,5 @@ function Sendi() {
     </div>
   );
 }
-
-export default Sendi;
+ß;
+export default BettaUI;
