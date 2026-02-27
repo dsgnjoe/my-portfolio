@@ -92,7 +92,7 @@ function Kriblink() {
             <MdKeyboardArrowLeft />
             <span>Return to home</span>
           </a>
-          <h1 className="text-[28px] md:text-4xl mb-8 leading-snug">
+          <h1 className="text-[28px] md:text-3xl mb-8 leading-snug">
             Rethinking off-campus housing for 15,000+ non- resident students
           </h1>
 
