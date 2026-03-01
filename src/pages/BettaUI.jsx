@@ -93,5 +93,5 @@ function BettaUI() {
     </div>
   );
 }
-ß;
+
 export default BettaUI;
