@@ -85,7 +85,7 @@ const Hero = () => {
                 Product Designer
               </h1>
               <p className="text-[#525866] mb-2 text-base lg:text-lg  font-light">
-                A product designer with 3+ years of experience designing
+                A product designer with 4+ years of experience designing
                 human-focused solutions across insurance, fintech, data
                 analytics, B2B SaaS, and internal tools.
               </p>
